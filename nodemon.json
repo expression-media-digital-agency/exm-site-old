@@ -1,0 +1,11 @@
+{
+  "watch": [
+    "server.js",
+    "src/routes.js",
+    "src/api",
+    ".env"
+  ],
+  "env": {
+    "NODE_ENV": "development"
+  }
+}

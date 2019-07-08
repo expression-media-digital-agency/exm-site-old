@@ -1,0 +1,38 @@
+@import "extends";
+@import "variables";
+
+.button {
+  border: 1px solid;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 30px;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.outline {
+  background-color: #fff;
+  border-color: $color-green;
+  color: $color-green;
+}
+
+.primary {
+  background-color: $color-orange;
+  border-color: $color-orange;
+  color: #fff;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.loading {
+  cursor: not-allowed;
+  pointer-events: none;
+}

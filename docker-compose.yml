@@ -1,0 +1,12 @@
+version: "3"
+services:
+  front-temp:
+    build: .
+    ports:
+      - "5674:3000"
+      - "3456:9001"
+    command: sh -c "yarn && yarn dev"
+    environment:
+      APP_PORT: "3000"
+    volumes:
+      - .:/app
