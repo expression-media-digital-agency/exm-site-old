@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "build": "next build",
-    "watch-css": "nodemon -e sass,scss -x \"npm run compile:scss\"",
     "compile:scss" : "node-sass src/styles/scss/main.scss src/styles/css/style.css -w",
     "dev": "NODE_ENV=development nodemon server.js",
     "lint": "eslint . --ext .js,.ts,.tsx",
