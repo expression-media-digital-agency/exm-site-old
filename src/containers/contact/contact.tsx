@@ -3,14 +3,11 @@ import { NextFunctionComponent } from 'next';
 import Head from 'next/head';
 import { Router } from 'routes';
 
-import { composeClasses } from 'utils/generic';
-import Button, { ButtonTypes } from 'components/Button/Button';
-
-const About: NextFunctionComponent<{}> = (): JSX.Element => {
+const Contact: NextFunctionComponent<{}> = (): JSX.Element => {
   return (
     <>
       <Head>
-        <title>EXM | About</title>
+        <title>EXM | Contact</title>
       </Head>
 
       <main>
@@ -20,4 +17,4 @@ const About: NextFunctionComponent<{}> = (): JSX.Element => {
   );
 };
 
-export default About;
+export default Contact;

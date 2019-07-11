@@ -16,12 +16,12 @@ module.exports = routes()
   .add({
     name: 'home',
     page: 'index',
-    pattern: '',
+    pattern: '/',
   })
   .add({
-    name: 'about',
-    page: 'about',
-    pattern: '/about',
+    name: 'contact',
+    page: 'contact',
+    pattern: '/contact',
   });
 
 

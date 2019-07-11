@@ -14,9 +14,27 @@ const Home: NextFunctionComponent<{}> = (): JSX.Element => {
         <title>EXM | Digital Agency</title>
       </Head>
 
+      <header className="header">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-7">
+            <h1 className="heading-one"> We Create <br/> Digital Solutions</h1>
+
+            </div>
+            <div className="col-sm-5">
+              <div className="text-center">
+                <img src="" alt=""/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
       <main>
-        <button className="btn btn-primary">Nice</button>
-        <h1> front temp alive</h1>
+        <section className="curly-img" id="curly-img">
+          <div>
+            <img src="/static/img/svg/curvy.svg" className="img-fluid" alt="curly-img"/>
+          </div>
+        </section>
       </main>
     </>
   );

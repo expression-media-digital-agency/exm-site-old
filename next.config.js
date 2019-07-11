@@ -26,6 +26,7 @@ const nextConfig = {
 		config.resolve.alias = {
 			...config.resolve.alias,
 			assets: path.resolve(__dirname, 'src/assets/'),
+			static: path.resolve(__dirname, 'src/static/'),
 			components: path.resolve(__dirname, 'src/components/'),
 			containers: path.resolve(__dirname, 'src/containers/'),
 			config: path.resolve(__dirname, 'src/config/'),
