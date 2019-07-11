@@ -1,10 +1,17 @@
+//Bootstrap
 @import '../scss/bootstrap/config';
+
+//Abstract
+@import '../scss/abstracts/variables';
+
+//Base
+@import '../scss/base/typography';
+
+//Containers
 @import '../scss/containers/home';
-@import '../scss/components/Button';
+
+//Components
 @import '../scss/components/NavBar';
-
-
-
 
 
 

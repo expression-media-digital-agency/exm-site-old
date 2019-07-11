@@ -2280,34 +2280,27 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-.button {
-  border: 1px solid;
-  border-radius: 3px;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 600;
-  padding: 8px 30px;
-  text-align: center;
-  text-transform: uppercase; }
-  .button:focus {
-    outline: none; }
+@font-face {
+  font-family: "ArticulatCF";
+  src: url("/static/fonts/ArticulatCF-Medium.otf"); }
 
-.outline {
-  background-color: #fff;
-  border-color: #55872d;
-  color: #55872d; }
+body {
+  font-family: 'ArticulatCF', sans-serif; }
 
-.primary {
-  background-color: #f06018;
-  border-color: #f06018;
-  color: #fff; }
+.heading-one {
+  font-size: 80px;
+  font-weight: bold;
+  color: #424242; }
 
-.fullWidth {
-  width: 100%; }
-
-.loading {
-  cursor: not-allowed;
-  pointer-events: none; }
+.header {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #FFFFFF; }
+  .header .curly-img {
+    background-color: #0F79D1; }
+    .header .curly-img img {
+      height: 100px;
+      width: 300px; }
 
 .navbar {
   background-color: #FFFFFF;
@@ -2315,4 +2308,7 @@ a.text-dark:hover, a.text-dark:focus {
   .navbar .exm-logo {
     width: 300px; }
   .navbar .nav-link {
-    color: #0F79D1; }
+    color: #0F79D1;
+    font-size: 16px;
+    font-weight: 550;
+    margin-right: 20px; }

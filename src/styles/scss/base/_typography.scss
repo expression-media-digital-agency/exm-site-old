@@ -1,0 +1,17 @@
+
+@font-face {
+    font-family: "ArticulatCF";
+    src: url("/static/fonts/ArticulatCF-Medium.otf");
+}
+
+
+body{
+    font-family: 'ArticulatCF', sans-serif;
+    
+}
+
+.heading-one{
+    font-size: $heading-one-font-size;
+    font-weight: bold;
+    color: $color-black;
+}
