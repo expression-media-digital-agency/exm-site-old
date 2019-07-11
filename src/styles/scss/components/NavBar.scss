@@ -1,0 +1,20 @@
+@import '../abstracts/_variables.scss';
+
+
+.navbar{
+    background-color: $color-white;
+    padding-top: $nav-padding-top;
+    .exm-logo{
+        width: 300px;
+    }
+    .nav-link{
+        color: $color-blue;
+    }
+}
+
+
+
+
+
+
+

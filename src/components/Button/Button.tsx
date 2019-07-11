@@ -3,7 +3,6 @@ import { Router } from 'routes';
 
 import { composeClasses } from '../../utils/generic';
 
-import styles from './Button.scss';
 
 export enum ButtonTypes {
   outline = 'outline',

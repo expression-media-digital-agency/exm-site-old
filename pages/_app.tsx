@@ -5,7 +5,7 @@ import { PageTransition } from 'next-page-transitions'
 
 // Styles
 import 'normalize.css';
-import 'styles/shared.css';
+import 'styles/css/style.css';
 
 // Components
 import { Router } from 'routes';
