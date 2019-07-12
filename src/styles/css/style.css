@@ -3192,18 +3192,18 @@ a:hover {
   border: none; }
 
 .footer {
-  background-color: #37474F;
-  position: relative;
-  width: 100%;
-  height: auto; }
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #37474F; }
+  .footer li {
+    list-style: none; }
+  .footer .footer-heading {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600; }
+  .footer .footer-text {
+    font-size: 16px;
+    color: #CCCCCC; }
 
-.footer-padding-top {
-  padding-top: 4rem; }
-
-.footer-explore {
-  list-style: none; }
-
-a.footer-text-white, .footer-text-white {
-  color: #CCCCCC; }
-  a.footer-text-white:hover, .footer-text-white:hover {
-    color: #0F79D1; }
+.footer-button {
+  float: right; }

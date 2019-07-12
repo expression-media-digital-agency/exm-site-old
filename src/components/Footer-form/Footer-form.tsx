@@ -30,15 +30,18 @@ class FooterForm extends React.Component {
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
                         <label htmlFor="email"></label>
-                        <input type="email" name="email" className="form-control" aria-describedby="emailHelp"
+                        <input type="email" name="email" className="form-control"
                                value={this.state.email} onChange={this.handleChange} placeholder="Enter email..." />
                     </div>
                     <div className="form-group">
                         <label htmlFor="text"></label>
-                        <textarea name="text" className="form-control" cols="20" rows="10" placeholder="Your message"
+                        <textarea name="text" className="form-control" rows="5" placeholder="Your message"
                         value={this.state.text} onChange={this.handleChange}></textarea>
                     </div>
-                    <button type="button" className="btn btn-footer mb-2">Send</button>
+                    <div className="footer-button">
+                        <button type="button" className="btn btn-footer mb-2">Send</button>
+
+                    </div>
                 </form>
             </div>
         );
