@@ -3072,6 +3072,11 @@ a:hover {
   font-weight: bold;
   color: #FFFFFF; }
 
+.heading-four {
+  font-size: 50px;
+  font-weight: bold;
+  color: #FFFFFF; }
+
 .paragraph-one {
   color: #FFFFFF;
   font-weight: 500;
@@ -3085,6 +3090,16 @@ a:hover {
 .paragraph-three {
   color: #696969;
   font-weight: 600;
+  font-size: 20px; }
+
+.paragraph-four {
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 25px; }
+
+.paragraph-five {
+  color: #FFFFFF;
+  font-weight: 500;
   font-size: 20px; }
 
 .underline {
@@ -3103,6 +3118,12 @@ a:hover {
   margin-bottom: 50px; }
 
 .main .services {
+  background-color: #0F79D1;
+  padding-top: 100px;
+  margin-top: -10px;
+  padding-bottom: 100px; }
+
+.main .create-solution {
   background-color: #0F79D1;
   padding-top: 100px;
   margin-top: -10px;
@@ -3169,3 +3190,20 @@ a:hover {
   background-color: #FDCA01;
   border-radius: 3px;
   border: none; }
+
+.footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #37474F; }
+  .footer li {
+    list-style: none; }
+  .footer .footer-heading {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600; }
+  .footer .footer-text {
+    font-size: 16px;
+    color: #CCCCCC; }
+
+.footer-button {
+  float: right; }

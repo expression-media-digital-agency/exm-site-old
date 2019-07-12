@@ -25,6 +25,13 @@ a:hover{
     color: $color-white;
 }
 
+.heading-four{
+    font-size: $heading-four-font-size;
+    font-weight: bold;
+    color: $color-white;
+}
+
+
 .paragraph-one{
     color: $color-white;
     font-weight: 500;
@@ -41,6 +48,18 @@ a:hover{
     color: $color-black-3;
     font-weight: 600;
     font-size: $paragraph-three-font-size
+}
+
+.paragraph-four{
+    color: $color-white;
+    font-weight: 600;
+    font-size: $paragraph-four-font-size
+}
+
+.paragraph-five{
+    color: $color-white;
+    font-weight: 500;
+    font-size: $paragraph-five-font-size
 }
 
 .underline{

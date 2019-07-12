@@ -1,0 +1,19 @@
+.footer{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: $color-black-2;
+  li{
+    list-style: none;
+  }
+  .footer-heading{
+    color: $color-white;
+    font-size: $footer-heading-font-size;
+    font-weight: 600;
+  }
+
+  .footer-text{
+    font-size: $footer-paragraph-font-size;
+    color: $color-grey;
+  }
+}
+

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "next build",
-    "compile:scss" : "node-sass src/styles/scss/main.scss src/styles/css/style.css -w",
+    "compile:scss": "node-sass src/styles/scss/main.scss src/styles/css/style.css -w",
     "dev": "NODE_ENV=development nodemon server.js",
     "lint": "eslint . --ext .js,.ts,.tsx",
     "start": "next start -p $PORT",
@@ -15,6 +15,7 @@
   "keywords": [],
   "license": "ISC",
   "dependencies": {
+    "@types/nodemailer": "^6.2.0",
     "@types/react-transition-group": "^2.9.2",
     "axios": "^0.18.0",
     "bootstrap-scss": "^4.3.1",
@@ -27,6 +28,7 @@
     "next-offline": "^3.3.6",
     "next-page-transitions": "^1.0.0-beta.2",
     "next-routes": "^1.4.2",
+    "nodemailer": "^6.2.1",
     "normalize.css": "^8.0.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
