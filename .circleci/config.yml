@@ -1,10 +1,5 @@
-version: 2.1
-orbs:
-  heroku: circleci/heroku@1.0.0
-
-workflows:
-  heroku_deploy:
-    docker:
-      - image: buildpack-deps:trusty
-    jobs:
-      - heroku/deploy-via-git
+deployment:
+  staging:
+    branch: master
+    heroku:
+      appname: exm-site
