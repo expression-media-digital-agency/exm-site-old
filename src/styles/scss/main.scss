@@ -6,9 +6,12 @@
 
 //Base
 @import '../scss/base/typography';
+@import '../scss/base/utilities';
+
 
 //Containers
 @import '../scss/containers/home';
+@import '../scss/containers/contact';
 
 //Components
 @import '../scss/components/navbar';

@@ -3047,11 +3047,15 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: "ArticulatCF";
   src: url("/static/fonts/ArticulatCF-Medium.otf"); }
 
+body {
+  font-family: 'ArticulatCF', sans-serif; }
+
 a:hover {
   text-decoration: none; }
 
-body {
-  font-family: 'ArticulatCF', sans-serif; }
+.header {
+  padding-top: 100px;
+  background-color: #FFFFFF; }
 
 .heading-one {
   font-size: 80px;
@@ -3063,28 +3067,77 @@ body {
   font-weight: bold;
   color: #FFFFFF; }
 
+.heading-three {
+  font-size: 70px;
+  font-weight: bold;
+  color: #FFFFFF; }
+
 .paragraph-one {
   color: #FFFFFF;
   font-weight: 500;
   font-size: 20px; }
 
-.header {
-  padding-top: 100px;
-  background-color: #FFFFFF; }
-  .header .curly-img {
-    background-color: #0F79D1;
-    padding-top: 0px;
-    padding-bottom: 0px; }
-    .header .curly-img img {
-      height: 50px; }
-  .header .heading-one {
-    margin-bottom: 50px; }
+.paragraph-two {
+  color: #424242;
+  font-weight: bold;
+  font-size: 30px; }
+
+.paragraph-three {
+  color: #696969;
+  font-weight: 600;
+  font-size: 20px; }
+
+.underline {
+  border-bottom: solid 10px #FFFFFF;
+  line-height: 1.5;
+  box-sizing: border-box; }
+
+.header .curly-img {
+  background-color: #0F79D1;
+  padding-top: 0px;
+  padding-bottom: 0px; }
+  .header .curly-img img {
+    height: 50px; }
+
+.header .heading-one {
+  margin-bottom: 50px; }
 
 .main .services {
   background-color: #0F79D1;
   padding-top: 100px;
   margin-top: -10px;
   padding-bottom: 100px; }
+
+.custom-shadow {
+  border-radius: 10px;
+  border: none;
+  padding: 60px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 19px 7px #aba6ab;
+  -moz-box-shadow: 0px 0px 19px 7px #aba6ab;
+  box-shadow: 0px 0px 19px 7px #aba6ab; }
+
+.contact {
+  padding-bottom: 100px; }
+
+.contact .heading-one {
+  margin-top: 20px;
+  padding-top: 100px; }
+
+.about {
+  background-color: #0F79D1;
+  padding: 140px; }
+
+.mission {
+  background-color: #CE3737;
+  padding: 140px; }
+
+.vision {
+  background-color: #FDCA01;
+  padding: 140px; }
+
+.text {
+  padding: 140px; }
 
 .navbar {
   background-color: #FFFFFF;

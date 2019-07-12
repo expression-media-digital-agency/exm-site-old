@@ -4,29 +4,8 @@
     src: url("/static/fonts/ArticulatCF-Medium.otf");
 }
 
-a:hover{
-    text-decoration: none;
-}
-
 body{
     font-family: 'ArticulatCF', sans-serif;
     
 }
 
-.heading-one{
-    font-size: $heading-one-font-size;
-    font-weight: bold;
-    color: $color-black;
-}
-
-.heading-two{
-    font-size: $heading-two-font-size;
-    font-weight: bold;
-    color: $color-white;
-}
-
-.paragraph-one{
-    color: $color-white;
-    font-weight: 500;
-    font-size: $paragraph-one-font-size
-}
