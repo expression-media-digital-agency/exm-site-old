@@ -1,5 +1,35 @@
-deployment:
-  staging:
-    branch: master
-    heroku:
-      appname: exm-site
+orbs:
+  heroku: circleci/heroku@1.0.0
+
+workflows:
+  build-deploy:
+    jobs:
+      - build
+  heroku_deploy:
+  - deploy:
+    requires:
+      - build
+    filters:
+      branches:
+        only: master
+
+jobs:
+  build:
+    steps:
+      - run: npm install
+      - save-cache:
+        paths:
+        - node_modules
+        key: v1-dependencies-{{ checksum "package.json" }}
+      - run: npm run build
+
+  deploy:
+    executor: heroku/default
+    steps:
+      - checkout
+      - heroku/install
+      - run:
+          name: Deploy Master to Heroku
+          command: |
+            git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git master
+          only-branch: master
