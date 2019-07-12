@@ -13,8 +13,7 @@ jobs:
       - run: npm run build
 
   deploy:
-    docker: # run the steps with Docker
-      executor: heroku/default
+    executor: heroku/default
     steps:
       - checkout
       - heroku/install
