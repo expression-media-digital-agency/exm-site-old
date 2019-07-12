@@ -28,6 +28,7 @@
     "next-offline": "^3.3.6",
     "next-page-transitions": "^1.0.0-beta.2",
     "next-routes": "^1.4.2",
+    "nodemailer": "^6.2.1",
     "normalize.css": "^8.0.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",

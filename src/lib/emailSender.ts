@@ -1,8 +1,7 @@
 import * as nodemailer from 'nodemailer';
 
-import * as constants from '../constants/constants';
+import { constants } from '../constants/constants';
 
-const {SMTP_HOST, SMTP_PORT, SMTP_SECURE} = constants;
 
 interface ITransport {
     host: string;
@@ -31,9 +30,9 @@ interface IEmailSender {
 }
 
 const transportOptions: ITransport = {
-    host: SMTP_HOST,
-    port: SMTP_PORT,
-    secure: SMTP_SECURE,
+    host: constants.SMTP_HOST,
+    port: constants.SMTP_PORT,
+    secure: constants.SMTP_SECURE,
     auth: {
         user: process.env.EMAIL_SENDER,
         pass: process.env.EMAIL_PW

@@ -1,11 +1,6 @@
-const constants: {
-    SMTP_HOST: string,
-    SMTP_PORT: number,
-    SMTP_SECURE: boolean,
-} = {
+ export const constants = {
+    CONTACT_SUBJECT: 'Contact from exm-site',
     SMTP_HOST: 'smtp.gmail.com',
     SMTP_PORT: 465,
     SMTP_SECURE: true,
 };
-
-export default constants;
