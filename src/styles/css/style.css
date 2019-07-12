@@ -3190,3 +3190,20 @@ a:hover {
   background-color: #FDCA01;
   border-radius: 3px;
   border: none; }
+
+.footer {
+  background-color: #37474F;
+  position: relative;
+  width: 100%;
+  height: auto; }
+
+.footer-padding-top {
+  padding-top: 4rem; }
+
+.footer-explore {
+  list-style: none; }
+
+a.footer-text-white, .footer-text-white {
+  color: #CCCCCC; }
+  a.footer-text-white:hover, .footer-text-white:hover {
+    color: #0F79D1; }

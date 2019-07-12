@@ -3,6 +3,7 @@ import Document, {
   Html, Head, Main, NextScript, NextDocumentContext, DefaultDocumentIProps,
 } from 'next/document';
 import NavBar from 'components/NavBar';
+import Footer from 'components/Footer';
 
 class MyDocument extends Document {
   public static async getInitialProps(ctx: NextDocumentContext): Promise<DefaultDocumentIProps> {
@@ -29,6 +30,7 @@ class MyDocument extends Document {
           <NavBar/>
           <Main />
           <NextScript />
+          <Footer/>
         </body>
       </Html>
     );
