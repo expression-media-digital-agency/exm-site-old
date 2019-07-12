@@ -94,3 +94,5 @@ build
 .idea/workspace
 /.idea/workspace
 .DS_Store
+
+.env

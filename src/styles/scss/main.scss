@@ -1,0 +1,20 @@
+//Bootstrap
+@import '../scss/bootstrap/config';
+
+//Abstract
+@import '../scss/abstracts/variables';
+
+//Base
+@import '../scss/base/typography';
+@import '../scss/base/utilities';
+
+
+//Containers
+@import '../scss/containers/home';
+@import '../scss/containers/contact';
+
+//Components
+@import '../scss/components/navbar';
+@import '../scss/components/button';
+@import "../scss/components/footer";
+@import "../scss/components/footer-form";

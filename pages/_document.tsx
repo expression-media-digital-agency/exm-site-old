@@ -2,6 +2,8 @@ import React from 'react';
 import Document, {
   Html, Head, Main, NextScript, NextDocumentContext, DefaultDocumentIProps,
 } from 'next/document';
+import NavBar from 'components/NavBar';
+import Footer from 'components/Footer';
 
 class MyDocument extends Document {
   public static async getInitialProps(ctx: NextDocumentContext): Promise<DefaultDocumentIProps> {
@@ -24,9 +26,11 @@ class MyDocument extends Document {
           />
         </Head>
 
-        <body className="wrapper">
+        <body>
+          <NavBar/>
           <Main />
           <NextScript />
+          <Footer/>
         </body>
       </Html>
     );

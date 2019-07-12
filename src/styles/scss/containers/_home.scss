@@ -1,0 +1,29 @@
+
+.header{
+    .curly-img{
+        background-color: $color-blue;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        img{
+            height: 50px;
+        }
+    }
+    .heading-one{
+        margin-bottom: 50px;
+    }
+}
+
+.main{
+    .services{
+        background-color: $color-blue;
+        padding-top: $section-padding-top;
+        margin-top: -10px;
+        padding-bottom: $section-padding-bottom
+    }
+    .create-solution{
+        background-color: $color-blue;
+        padding-top: $section-padding-top;
+        margin-top: -10px;
+        padding-bottom: $section-padding-bottom
+    }
+}

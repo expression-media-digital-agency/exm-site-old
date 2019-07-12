@@ -9,7 +9,19 @@ const routes = require('next-routes');
  */
 module.exports = routes()
   .add({
-    name: 'forgotPassword',
-    page: 'forgotPassword',
-    pattern: '/forgot-password',
+    name: 'our-story',
+    page: 'story',
+    pattern: '/our-story',
+  })
+  .add({
+    name: 'home',
+    page: 'index',
+    pattern: '/',
+  })
+  .add({
+    name: 'contact',
+    page: 'contact',
+    pattern: '/contact',
   });
+
+
