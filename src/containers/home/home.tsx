@@ -81,7 +81,25 @@ const Home: NextFunctionComponent<{}> = (): JSX.Element => {
             </div>
           </div>
         </section>
-        
+        <section className="create-solution">
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-10">
+                <h4 className="heading-four">Need to Create a Solution? <p className="paragraph-four">Lets discuss your next project</p></h4>
+                <p className="paragraph-five">Our team of creatives are ready to help, you can click on
+the button to get started.</p>
+              </div>
+              <div className="col-sm-2">
+                <Link href="/contact">
+                  <a className="btn-get-started">
+                    Get Started
+                  </a>
+                </Link>
+                
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );
