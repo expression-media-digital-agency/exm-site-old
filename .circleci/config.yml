@@ -1,56 +1,40 @@
-#orbs:
-#  heroku: circleci/heroku@1.0.0
-#
-#workflows:
-#  build-deploy:
-#    jobs:
-#      - build
-#  heroku_deploy:
-#  - deploy:
-#    requires:
-#      - build
-#    filters:
-#      branches:
-#        only: master
-#
-#jobs:
-#  build:
-#    steps:
-#      - run: npm install
-#      - save-cache:
-#        paths:
-#        - node_modules
-#        key: v1-dependencies-{{ checksum "package.json" }}
-#      - run: npm run build
-#
-#  deploy:
-#    executor: heroku/default
-#    steps:
-#      - checkout
-#      - heroku/install
-#      - run:
-#          name: Deploy Master to Heroku
-#          command: |
-#            git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git master
-#          only-branch: master
-
 version: 2
-  jobs:
-    - build:
-      docker:
-        - image: circleci/node:8
-      steps:
-        - checkout
-        - restore_cache: # special step to restore the dependency cache
-      key: dependency-cache-{{ checksum "package.json" }}
-        - run:
-            name: Setup Dependencies
-            command: npm install
-        - run:
-            name: Setup Code Climate test-reporter
-            command: |
-              curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter            chmod +x ./cc-test-reporter
-        - save_cache: # special step to save the dependency cache
-          key: dependency-cache-{{ checksum "package.json" }}
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.4.2-jessie-node
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: |
+            npm install
+      - save-cache:
           paths:
-            - ./node_modules
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+      - run:
+          name: Build App
+          command: |
+            npm run build
+  deploy:
+    docker:
+      - image: buildpack-deps:trusty
+    steps:
+      - checkout
+      - run:
+        name: Deploy master to Heroku
+        command: |
+          git push --force https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git HEAD:refs/heads/master
+
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
