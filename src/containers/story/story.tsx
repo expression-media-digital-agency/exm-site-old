@@ -1,10 +1,7 @@
 import React from 'react';
 import { NextFunctionComponent } from 'next';
 import Head from 'next/head';
-import { Router } from 'routes';
 
-import { composeClasses } from 'utils/generic';
-import Button, { ButtonTypes } from 'components/Button/Button';
 
 const About: NextFunctionComponent<{}> = (): JSX.Element => {
   return (
