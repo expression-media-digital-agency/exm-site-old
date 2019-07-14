@@ -96,3 +96,4 @@ build
 .DS_Store
 
 .env
+yarn.lock
