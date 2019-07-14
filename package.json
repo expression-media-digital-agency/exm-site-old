@@ -21,6 +21,8 @@
     "@types/nodemailer": "^6.2.0",
     "@types/react-transition-group": "^2.9.2",
     "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "@zeit/next-typescript": "^1.1.1",
     "animate.css": "^3.7.2",
     "aos": "^3.0.0-beta.6",
     "axios": "^0.18.0",
@@ -33,9 +35,11 @@
     "lodash.omit": "^4.5.0",
     "lodash.orderby": "^4.6.0",
     "next": "^8.0.3",
+    "next-compose-plugins": "^2.2.0",
     "next-offline": "^3.4.0",
     "next-page-transitions": "^1.0.0-beta.2",
     "next-routes": "^1.4.2",
+    "node-sass": "^4.11.0",
     "nodemailer": "^6.2.1",
     "normalize.css": "^8.0.1",
     "npm": "^6.10.1",
@@ -82,5 +86,8 @@
     "ts-jest": "^24.0.0",
     "typescript-eslint-parser": "^22.0.0",
     "url-loader": "^1.1.2"
+  },
+  "engines": {
+    "node": "10.x"
   }
 }
