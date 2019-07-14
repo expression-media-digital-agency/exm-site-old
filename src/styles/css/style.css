@@ -4143,32 +4143,6 @@ a:hover {
 
 .contact-main {
   background-color: #0F79D1; }
-  .contact-main .contact-form {
-    padding-top: 100px;
-    padding-bottom: 100px; }
-    .contact-main .contact-form .container {
-      margin-top: -200px;
-      -webkit-box-shadow: 0px 0px 15px -2px #707070;
-      -moz-box-shadow: 0px 0px 15px -2px #707070;
-      box-shadow: 0px 0px 15px -2px #707070; }
-      .contact-main .contact-form .container .form-left-side {
-        background-color: #37474F;
-        padding: 50px; }
-        .contact-main .contact-form .container .form-left-side h2 {
-          padding-bottom: 60px; }
-        .contact-main .contact-form .container .form-left-side p {
-          font-size: 14px;
-          font-weight: 500;
-          color: #FFFFFF; }
-      .contact-main .contact-form .container .form-right-side {
-        background-color: #FFFFFF;
-        padding: 50px; }
-      .contact-main .contact-form .container .form-control {
-        border-left: none;
-        border-right: none;
-        border-top: none;
-        border-radius: 0px;
-        border-bottom: 1px solid #CCCCCC; }
   .contact-main .social-media {
     padding-top: 100px;
     padding-bottom: 100px; }
@@ -4301,3 +4275,30 @@ a:hover {
     text-decoration: none;
     opacity: 0.8;
     color: #FFFFFF; }
+
+.contact-form {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .contact-form .container {
+    margin-top: -200px;
+    -webkit-box-shadow: 0px 0px 15px -2px #707070;
+    -moz-box-shadow: 0px 0px 15px -2px #707070;
+    box-shadow: 0px 0px 15px -2px #707070; }
+    .contact-form .container .form-left-side {
+      background-color: #37474F;
+      padding: 50px; }
+      .contact-form .container .form-left-side h2 {
+        padding-bottom: 60px; }
+      .contact-form .container .form-left-side p {
+        font-size: 14px;
+        font-weight: 500;
+        color: #FFFFFF; }
+    .contact-form .container .form-right-side {
+      background-color: #FFFFFF;
+      padding: 50px; }
+    .contact-form .container .form-control {
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      border-radius: 0px;
+      border-bottom: 1px solid #CCCCCC; }

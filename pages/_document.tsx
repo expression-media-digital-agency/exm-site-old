@@ -24,7 +24,6 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Raleway:400,600,700"
             rel="stylesheet"
           />
-
         </Head>
 
         <body>
