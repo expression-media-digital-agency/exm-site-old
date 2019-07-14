@@ -19,7 +19,7 @@ const ContactForm: React.SFC<IContactFormProps> = ({}) => {
                 </h2>
                 <p ><span><FontAwesomeIcon icon={faMapMarkerAlt} /></span> Gibson House, No 12
 Flatten building, Ile Ife.</p>
-                <p><span><FontAwesomeIcon icon={faEnvelope} /></span> info@exmediaagency.com</p>
+                <p><span><FontAwesomeIcon icon={faEnvelope} /></span> exmdigitalagency@gmail.com</p>
                 <p><span><FontAwesomeIcon icon={faPhoneAlt} /></span> +234(0) 81 4945 6123</p>
               </div>
               <div className="col-sm-8 form-right-side">
