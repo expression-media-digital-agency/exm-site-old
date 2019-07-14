@@ -11,6 +11,11 @@
     .heading-one{
         margin-bottom: 50px;
     }
+    a:hover{
+        text-decoration: none;
+        opacity: 0.8;
+        color: $color-black;
+    }
 }
 
 .main{
@@ -35,5 +40,9 @@
     .card {
         border-radius: 15px;
       }
-  
+      a:hover{
+        text-decoration: none;
+        opacity: 0.8;
+        color: $color-black;
+    }
 }

@@ -15,17 +15,17 @@ const Home: NextFunctionComponent<{}> = (): JSX.Element => {
         <div className="container">
           <div className="row">
             <div className="col-sm-7">
-              <h1 className="heading-one animated fadeIn delay-1s"> We Create <br/> Digital Solutions</h1>
+              <h1 className="heading-one animated fadeIn delay-2s"> We Create <br/> Digital Solutions</h1>
               <div>
                 <Link href="/contact">
-                  <a className="btn-get-started animated fadeInUp delay-2s">
+                  <a className="btn-get-started hvr-shadow-radial animated fadeInUp delay-3s">
                     Get Started
                   </a>
                 </Link>
               </div>
             </div>
             <div className="col-sm-5">
-              <div className="text-center animated fadeIn delay-1s">
+              <div className="text-center animated fadeIn delay-2s">
                 <img src="/static/img/svg/pc-landing1.svg" className="img-fluid" alt=""/>
               </div>
             </div>
@@ -91,7 +91,7 @@ the button to get started.</p>
               </div>
               <div className="col-sm-3">
                 <Link href="/contact">
-                  <a className="btn-get-started">
+                  <a className="btn-get-started hvr-shadow-radial">
                     Get Started
                   </a>
                 </Link>

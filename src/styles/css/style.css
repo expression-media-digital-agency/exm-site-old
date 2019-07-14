@@ -4099,6 +4099,11 @@ a:hover {
 .header .heading-one {
   margin-bottom: 50px; }
 
+.header a:hover {
+  text-decoration: none;
+  opacity: 0.8;
+  color: #424242; }
+
 .main .services {
   background-color: #0F79D1;
   padding-top: 100px;
@@ -4120,6 +4125,11 @@ a:hover {
 .main .card {
   border-radius: 15px; }
 
+.main a:hover {
+  text-decoration: none;
+  opacity: 0.8;
+  color: #424242; }
+
 .header {
   padding-bottom: 170px; }
   .header .contact-heading {
@@ -4137,7 +4147,10 @@ a:hover {
     padding-top: 100px;
     padding-bottom: 100px; }
     .contact-main .contact-form .container {
-      margin-top: -200px; }
+      margin-top: -200px;
+      -webkit-box-shadow: 0px 0px 15px -2px #707070;
+      -moz-box-shadow: 0px 0px 15px -2px #707070;
+      box-shadow: 0px 0px 15px -2px #707070; }
       .contact-main .contact-form .container .form-left-side {
         background-color: #37474F;
         padding: 50px; }
@@ -4150,6 +4163,22 @@ a:hover {
       .contact-main .contact-form .container .form-right-side {
         background-color: #FFFFFF;
         padding: 50px; }
+      .contact-main .contact-form .container .form-control {
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-radius: 0px;
+        border-bottom: 1px solid #CCCCCC; }
+  .contact-main .social-media {
+    padding-top: 100px;
+    padding-bottom: 100px; }
+    .contact-main .social-media li {
+      list-style: none; }
+    .contact-main .social-media .icons {
+      padding-top: 20px; }
+      .contact-main .social-media .icons span {
+        margin: 20px;
+        font-size: 40px; }
 
 .custom-shadow {
   border-radius: 10px;
@@ -4181,10 +4210,6 @@ a:hover {
 
 .text {
   padding: 140px; }
-
-.story-create-solution {
-  padding-top: 30px;
-  padding-bottom: 30px; }
 
 .navbar {
   background-color: #FFFFFF;
@@ -4250,11 +4275,16 @@ a:hover {
   .footer .copyright {
     padding-top: 50px; }
 
+.footer-form button:hover {
+  text-decoration: none;
+  opacity: 0.8;
+  color: #FFFFFF; }
+
 .solution {
   background-color: #FFFFFF;
-  padding-top: 100px;
+  padding-top: 130px;
   margin-top: -10px;
-  padding-bottom: 100px; }
+  padding-bottom: 130px; }
   .solution .heading {
     font-size: 50px;
     font-weight: bold;
@@ -4267,3 +4297,7 @@ a:hover {
     color: #424242;
     font-weight: 500;
     font-size: 20px; }
+  .solution a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+    color: #FFFFFF; }

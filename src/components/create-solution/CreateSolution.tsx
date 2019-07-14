@@ -18,7 +18,7 @@ const CreateSolution: React.SFC<ICreateSolutionProps> = ({}) => {
                 </div>
                 <div className="col-sm-3">
                     <Link href="/contact">
-                    <a className="btn-get-started-two">
+                    <a className="btn-get-started-two hvr-shadow-radial">
                         Get Started
                     </a>
                     </Link>

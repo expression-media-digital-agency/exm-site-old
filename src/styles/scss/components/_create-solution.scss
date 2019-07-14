@@ -1,8 +1,8 @@
 .solution{
     background-color: $color-white;
-    padding-top: $section-padding-top;
+    padding-top: 130px;
     margin-top: -10px;
-    padding-bottom: $section-padding-bottom;
+    padding-bottom: 130px;
 
     .heading{
         font-size: $create-solution-heading-font-size;
@@ -18,5 +18,10 @@
         color: $color-black;
         font-weight: 500;
         font-size: $create-solution-paragraph-two-font-size
+    }
+    a:hover{
+        text-decoration: none;
+        opacity: 0.8;
+        color: $color-white;
     }
 }

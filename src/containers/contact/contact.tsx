@@ -2,6 +2,8 @@ import React from 'react';
 import { NextFunctionComponent } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
+import CreateSolution from '../../components/create-solution/CreateSolution';
+
 
 const Contact: NextFunctionComponent<{}> = (): JSX.Element => {
   return (
@@ -13,10 +15,10 @@ const Contact: NextFunctionComponent<{}> = (): JSX.Element => {
         <div className="container">
           <div className="row">
             <div className="col-sm-7">
-              <h1 className="contact-heading">
+              <h1 className="contact-heading  animated fadeIn delay-1s">
                 Get in touch
               </h1>
-              <p className="contact-paragraph">
+              <p className="contact-paragraph  animated fadeIn delay-2s">
               Expression Media also called “ExM”, partners with businesses and organizations to assist them focus on the core of their businesses. 
               </p>
             </div>
@@ -28,7 +30,7 @@ const Contact: NextFunctionComponent<{}> = (): JSX.Element => {
       </header>
 
       <main className="contact-main">
-        <section className="contact-form">
+        <section className="contact-form  animated fadeIn delay-3s">
           <div className="container">
             <div className="row">
               <div className="col-sm-4 form-left-side">
@@ -42,23 +44,56 @@ Flatten building, Ile Ife.</p>
               </div>
               <div className="col-sm-8 form-right-side">
               <form>
-                <div className="form-group">
-                  <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
+                <div className="form-row">
+                  <div className="form-group col-md-6">
+                    <input type="text" className="form-control" id="name" aria-describedby="emailHelp" placeholder="Name"/>
+                  </div>
+                  <div className="form-group col-md-6">
+                    <input type="text" className="form-control" id="company" placeholder="Company"/>
+                  </div>
                 </div>
-                <div className="form-group">
-                  <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password"/>
+
+                <div className="form-row">
+                  <div className="form-group col-md-6">
+                    <input type="email" className="form-control" id="email" aria-describedby="emailHelp" placeholder="Email"/>
+                  </div>
+                  <div className="form-group col-md-6">
+                    <input type="text" className="form-control" id="address" placeholder="Address"/>
+                  </div>
+                </div>
+                <div className="form-row">
+                  <div className="form-group col-md-12">
+                    <textarea className="form-control" id="textarea" placeholder="Message" rows="4"></textarea>
+                  </div>
                 </div>
                 <div className="text-right">
-                <button type="submit" className="btn btn-primary">Submit</button>
-
+                  <button type="submit" className="btn btn-footer">Send</button>
                 </div>
               </form>
               </div>
             </div>
           </div>
         </section>
+        <section className="social-media">
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-3"></div>
+              <div className="col-sm-6 text-center">
+                <h3 className="heading-four  animated fadeIn delay-1s">We are actively social</h3>
+
+                <li className="icons  animated fadeIn delay-2s">
+                  <span> <a href="" target="_blank"><img src="/static/img/svg/facebookic.svg" alt="facebook"/></a></span>
+                  <span><a href="" target="_blank"><img src="/static/img/svg/instagramic.svg" alt="facebook"/></a></span>
+                  <span><a href="" target="_blank"><img src="/static/img/svg/twitteric.svg" alt="facebook"/></a></span>
+                  <span><a href="" target="_blank"><img src="/static/img/svg/linkedinic.svg" alt="facebook"/></a></span>
+                </li>
+              </div>
+              <div className="col-sm-3"></div>
+            </div>
+          </div>
+        </section>
         <section className="contact-create-solution">
-          
+          <CreateSolution/>
         </section>
       </main>
     </>
