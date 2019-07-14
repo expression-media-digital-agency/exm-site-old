@@ -5,10 +5,12 @@ import { PageTransition } from 'next-page-transitions'
 
 // Styles
 import 'normalize.css';
+import 'animate.css';
+import 'hover.css';
 import 'styles/css/style.css';
 
+
 // Components
-import { Router } from 'routes';
 
 interface IAppState {
   loggedIn: boolean;
@@ -49,7 +51,7 @@ class Root extends App<{}, IAppState>{
     const { Component, pageProps, router } = this.props;
     return (
           <Container>
-              <PageTransition timeout={300} classNames="page-transition">
+              <PageTransition timeout={600} classNames="page-transition">
                 <Component {...pageProps} key={router.route} />
               </PageTransition>
           </Container>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { NextFunctionComponent } from 'next';
 import Head from 'next/head';
-
+import CreateSolution from '../../components/create-solution/CreateSolution';
 
 const About: NextFunctionComponent<{}> = (): JSX.Element => {
   return (
@@ -14,9 +14,9 @@ const About: NextFunctionComponent<{}> = (): JSX.Element => {
         <div className="container">
           <div className="row contact">
             <div className="col-sm-7">
-              <h1 className="heading-one">Get to know us <p className="paragraph-two">Your Success becomes our story</p></h1>
+              <h1 className="heading-one animated fadeIn delay-2s" >Get to know us <p className="paragraph-two">Your Success becomes our story</p></h1>
             </div>
-            <div className="col-sm-5">
+            <div className="col-sm-5 animated fadeIn delay-2s">
               <div className="text-center custom-shadow">
                 <img src="/static/img/svg/knowus.svg" className="img-fluid" alt="knowus-img"/>
               </div>
@@ -29,7 +29,8 @@ const About: NextFunctionComponent<{}> = (): JSX.Element => {
           <div className="container-fluid">
             <div className="row">
                 <div className="col-sm-6 about text-center">
-                  <h2 className="heading-three underline">About</h2>
+                  <h2 className="heading-three">About</h2>
+                  <hr className="underline"/>
                 </div>
                 <div className="col-sm-6 text text-center">
                   <p className="paragraph-three">Our team of Creative individuals are here to see
@@ -48,7 +49,8 @@ const About: NextFunctionComponent<{}> = (): JSX.Element => {
                  you exactly what you want.</p>
               </div>
               <div className="col-sm-6 mission text-center">
-                <h2 className="heading-three underline">Mission</h2>
+                <h2 className="heading-three">Mission</h2>
+                <hr className="underline"/>
               </div>
             </div>
           </div>
@@ -57,7 +59,8 @@ const About: NextFunctionComponent<{}> = (): JSX.Element => {
           <div className="container-fluid">
             <div className="row">
                 <div className="col-sm-6 vision text-center">
-                  <h2 className="heading-three underline">Vision</h2>
+                  <h2 className="heading-three">Vision</h2>
+                  <hr className="underline"/>
                 </div>
                 <div className="col-sm-6 text text-center">
                 <p className="paragraph-three">Our team of Creative individuals are here to see
@@ -67,7 +70,7 @@ const About: NextFunctionComponent<{}> = (): JSX.Element => {
             </div>
           </div>
         </section>
-        
+        <CreateSolution/>
       </main>
     </>
   );

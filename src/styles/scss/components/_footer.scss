@@ -1,6 +1,6 @@
 .footer{
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   background-color: $color-black-2;
   li{
     list-style: none;
@@ -15,5 +15,19 @@
     font-size: $footer-paragraph-font-size;
     color: $color-grey;
   }
+  .icons{
+    margin-top: 10px;
+    span{
+      margin-right: 20px;
+      img{
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  .copyright{
+    padding-top: 50px;
+  }
+
 }
 

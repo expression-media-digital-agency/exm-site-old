@@ -1,6 +1,6 @@
 .btn-footer{
     background-color: $color-blue;
-    padding: 10px 20px;
+    padding: 5px 30px;
     border-radius: 5px;
     border: none;
     color: $color-white;
@@ -10,9 +10,19 @@
     color: $color-black;
     font-size: 16px;
     font-weight: 500;
-    padding: 10px 30px;
+    padding: 15px 40px;
     font-weight: bolder;
     background-color: $color-yellow;
+    border-radius: 3px;
+    border: none;
+}
+.btn-get-started-two{
+    color: $color-white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px 40px;
+    font-weight: bolder;
+    background-color: $color-blue;
     border-radius: 3px;
     border: none;
 }

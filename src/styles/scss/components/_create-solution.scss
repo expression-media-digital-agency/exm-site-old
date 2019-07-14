@@ -1,0 +1,27 @@
+.solution{
+    background-color: $color-white;
+    padding-top: 130px;
+    margin-top: -10px;
+    padding-bottom: 130px;
+
+    .heading{
+        font-size: $create-solution-heading-font-size;
+        font-weight: bold;
+        color: $color-black;
+    }
+    .paragraph-one{
+        color: $color-black;
+        font-weight: 600;
+        font-size: $create-solution-paragraph-one-font-size
+    }
+    .paragraph-two{
+        color: $color-black;
+        font-weight: 500;
+        font-size: $create-solution-paragraph-two-font-size
+    }
+    a:hover{
+        text-decoration: none;
+        opacity: 0.8;
+        color: $color-white;
+    }
+}
