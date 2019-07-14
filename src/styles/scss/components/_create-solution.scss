@@ -1,0 +1,22 @@
+.solution{
+    background-color: $color-white;
+    padding-top: $section-padding-top;
+    margin-top: -10px;
+    padding-bottom: $section-padding-bottom;
+
+    .heading{
+        font-size: $create-solution-heading-font-size;
+        font-weight: bold;
+        color: $color-black;
+    }
+    .paragraph-one{
+        color: $color-black;
+        font-weight: 600;
+        font-size: $create-solution-paragraph-one-font-size
+    }
+    .paragraph-two{
+        color: $color-black;
+        font-weight: 500;
+        font-size: $create-solution-paragraph-two-font-size
+    }
+}

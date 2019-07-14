@@ -15,17 +15,17 @@ const Home: NextFunctionComponent<{}> = (): JSX.Element => {
         <div className="container">
           <div className="row">
             <div className="col-sm-7">
-              <h1 className="heading-one"> We Create <br/> Digital Solutions</h1>
+              <h1 className="heading-one animated fadeIn delay-1s"> We Create <br/> Digital Solutions</h1>
               <div>
                 <Link href="/contact">
-                  <a className="btn-get-started">
+                  <a className="btn-get-started animated fadeInUp delay-2s">
                     Get Started
                   </a>
                 </Link>
               </div>
             </div>
             <div className="col-sm-5">
-              <div className="text-center">
+              <div className="text-center animated fadeIn delay-1s">
                 <img src="/static/img/svg/pc-landing1.svg" className="img-fluid" alt=""/>
               </div>
             </div>
@@ -97,6 +97,51 @@ the button to get started.</p>
                 </Link>
                 
               </div>
+            </div>
+          </div>
+        </section>
+        <section className="projects">
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-6 text-left">
+                <h4 className="heading-four">Projects <p className="paragraph-four">We work hand in hand with brands, creating great experience.</p></h4>
+              </div>
+              <div className="col-sm-6"></div>
+            </div>
+            <div className="row">
+            <div className="card-columns">
+              <div className="card">
+                <a href="">
+                <img className="card-img" src="/static/img/png/projects1.png" alt="Card image"/>
+                </a>
+              </div>
+              <div className="card">
+                <a href="">
+                <img className="card-img" src="/static/img/png/projects2.png" alt="Card image"/>
+                </a>
+              </div>
+              <div className="card">
+                <a href="">
+                <img className="card-img" src="/static/img/png/projects2.png" alt="Card image"/>
+                </a>
+              </div>
+              <div className="card">
+                <a href="">
+                <img className="card-img" src="/static/img/png/projects1.png" alt="Card image"/>
+                </a>
+              </div>
+              <div className="card">
+                <a href="">
+                <img className="card-img" src="/static/img/png/projects1.png" alt="Card image"/>
+                </a>
+              </div>
+              <div className="card">
+                <a href="">
+                <img className="card-img" src="/static/img/png/projects2.png" alt="Card image"/>
+                </a>
+              </div>
+            </div>
+                
             </div>
           </div>
         </section>

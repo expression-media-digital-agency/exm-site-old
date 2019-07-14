@@ -1,0 +1,42 @@
+.custom-shadow {
+    border-radius: 10px;
+    border: none;
+    padding: 60px;
+    background-color: $color-white;
+    -webkit-box-shadow: 0px 0px 19px 7px rgba(171,166,171,1);
+     -moz-box-shadow: 0px 0px 19px 7px rgba(171,166,171,1);
+     box-shadow: 0px 0px 19px 7px rgba(171,166,171,1);
+ } 
+
+ .contact{
+    padding-bottom:  $section-padding-bottom
+ }
+
+ .contact{
+     .heading-one{
+         margin-top: 20px;
+         padding-top: $section-padding-top
+     }
+ }
+
+.about{
+    background-color: $color-blue;
+    padding: 140px;
+}
+.mission{
+    background-color: $color-red;
+    padding: 140px;
+}
+.vision{
+    background-color: $color-yellow;
+    padding: 140px;
+}
+
+.text{
+    padding: 140px;
+}
+
+.story-create-solution{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}

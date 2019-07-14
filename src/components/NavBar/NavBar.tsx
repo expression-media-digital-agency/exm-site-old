@@ -14,7 +14,7 @@ const NavBar: React.SFC<INavBarProps> = ({
         <nav className="navbar navbar-expand-lg">
             <div className="container">
                 <Link href="/">
-                    <a className="navbar-brand"><img className="img-fluid exm-logo" src="" alt="exm-logo"/></a>
+                    <a className="navbar-brand"><img className="img-fluid exm-logo" src="/static/img/png/exmlogo.png" alt="exm-logo"/></a>
                 </Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
