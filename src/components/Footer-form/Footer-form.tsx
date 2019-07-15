@@ -17,7 +17,7 @@ const FooterForm: React.SFC<IFooterFormProps> = ({
                     <input type="email" className="form-control" id="email" placeholder="Your email..."/>
                 </div>
                 <div className="form-group">
-                <textarea class="form-control" id="message" rows="3" placeholder="Your message here..."></textarea>
+                <textarea className="form-control" id="message" rows="3" placeholder="Your message here..."></textarea>
                 </div>
                 <div className="float-right">
                     <button type="submit" className="btn btn-footer">Send</button>
