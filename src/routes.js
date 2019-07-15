@@ -11,7 +11,7 @@ module.exports = routes()
   .add({
     name: 'story',
     page: 'story',
-    pattern: '/our-story',
+    pattern: '/story',
   })
   .add({
     name: 'home',
