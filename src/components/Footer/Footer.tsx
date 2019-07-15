@@ -53,10 +53,9 @@ const Footer: React.SFC<IFooterProps> = ({}) => {
                                 +234 500 500 5000
                             </li>
                             <li className="icons">
-                                <span> <a href="" target="_blank"><img src="/static/img/svg/facebookic.svg" alt="facebook"/></a></span>
-                                <span><a href="" target="_blank"><img src="/static/img/svg/instagramic.svg" alt="facebook"/></a></span>
-                                <span><a href="" target="_blank"><img src="/static/img/svg/twitteric.svg" alt="facebook"/></a></span>
-                                <span><a href="" target="_blank"><img src="/static/img/svg/linkedinic.svg" alt="facebook"/></a></span>
+                                <span> <a href="https://www.facebook.com/exmdigitalagency/" target="_blank"><img src="/static/img/svg/facebookic.svg" alt="facebook"/></a></span>
+                                <span><a href="https://www.instagram.com/exmdigital/" target="_blank"><img src="/static/img/svg/instagramic.svg" alt="instagram"/></a></span>
+                                <span><a href="https://twitter.com/exmdigital" target="_blank"><img src="/static/img/svg/twitteric.svg" alt="twitter"/></a></span>
                             </li>
                         </div>
 
