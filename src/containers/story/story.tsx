@@ -34,7 +34,7 @@ const About: NextFunctionComponent<{}> = (): JSX.Element => {
                 </div>
                 <div className="col-sm-6 text text-center">
                   <p className="paragraph-three">Our team of Creative individuals are here to see
-                  to it that your desire is satisfied by diving 
+                  to it that your desire is satisfied by giving 
                   you exactly what you want.</p>
                 </div>
             </div>
@@ -45,7 +45,7 @@ const About: NextFunctionComponent<{}> = (): JSX.Element => {
             <div className="row">
               <div className="col-sm-6 text text-center">
               <p className="paragraph-three">Our team of Creative individuals are here to see
-                 to it that your desire is satisfied by diving 
+                 to it that your desire is satisfied by giving 
                  you exactly what you want.</p>
               </div>
               <div className="col-sm-6 mission text-center">
@@ -64,7 +64,7 @@ const About: NextFunctionComponent<{}> = (): JSX.Element => {
                 </div>
                 <div className="col-sm-6 text text-center">
                 <p className="paragraph-three">Our team of Creative individuals are here to see
-                  to it that your desire is satisfied by diving 
+                  to it that your desire is satisfied by giving 
                   you exactly what you want.</p>
                 </div>
             </div>

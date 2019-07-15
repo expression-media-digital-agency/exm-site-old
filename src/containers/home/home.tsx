@@ -45,7 +45,7 @@ const Home: NextFunctionComponent<{}> = (): JSX.Element => {
               <div className="col-sm-6">
                 <h2 className="heading-two">Branding</h2>
                 <p className="paragraph-one">Our team of Creative individuals are here to see 
-                to it that your desire is satisfied by diving 
+                to it that your desire is satisfied by giving 
                 you exactly what you want.</p>
               </div>
             </div>
@@ -57,7 +57,7 @@ const Home: NextFunctionComponent<{}> = (): JSX.Element => {
               <div className="col-sm-6">
                 <h2 className="heading-two">Digital Marketing</h2>
                 <p className="paragraph-one">Our team of Creative individuals are here to see
-                 to it that your desire is satisfied by diving 
+                 to it that your desire is satisfied by giving 
                  you exactly what you want.</p>
               </div>
               <div className="col-sm-6 text-center">
@@ -76,7 +76,7 @@ const Home: NextFunctionComponent<{}> = (): JSX.Element => {
                 <h2 className="heading-two">Software Development</h2>
                 <p className="paragraph-one">Our team of Creative individuals are here to see
                  to it that your desire is satisfied 
-                by diving you exactly what you want.</p>
+                by giving you exactly what you want.</p>
               </div>
             </div>
           </div>
