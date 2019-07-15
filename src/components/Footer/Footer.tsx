@@ -54,7 +54,7 @@ const Footer: React.SFC<IFooterProps> = ({}) => {
                             </li>
                             <li className="icons">
                                 <span> <a href="https://www.facebook.com/exmdigitalagency/" target="_blank"><img src="/static/img/svg/facebookic.svg" alt="facebook"/></a></span>
-                                <span><a href="https://www.instagram.com/exmdigital/" target="_blank"><img src="/static/img/svg/instagramic.svg" alt="instagram"/></a></span>
+                                <span><a href="https://www.instagram.com/exmdigital/" target="_blank"><img src="/static/img/png/instagramwhite.png" alt="instagram"/></a></span>
                                 <span><a href="https://twitter.com/exmdigital" target="_blank"><img src="/static/img/svg/twitteric.svg" alt="twitter"/></a></span>
                             </li>
                         </div>
