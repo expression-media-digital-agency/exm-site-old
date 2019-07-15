@@ -23,7 +23,7 @@ const NavBar: React.SFC<INavBarProps> = ({
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav animated fadeInDown delay-2s">
                     <li className="nav-item active">
-                        <Link href="/our-story">
+                        <Link href="/story">
                             <a className="nav-link hvr-bob">Our Story</a>
                         </Link>
                     </li>
