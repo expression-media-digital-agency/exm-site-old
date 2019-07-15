@@ -4153,6 +4153,9 @@ a:hover {
       .contact-main .social-media .icons span {
         margin: 20px;
         font-size: 40px; }
+        .contact-main .social-media .icons span img {
+          width: 20px;
+          height: 20px; }
 
 .custom-shadow {
   border-radius: 10px;
