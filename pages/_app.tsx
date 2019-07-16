@@ -9,6 +9,8 @@ import 'animate.css';
 import 'hover.css';
 import 'styles/css/style.css';
 
+// //Scripts
+import 'jquery/dist/jquery.min.js'
 
 // Components
 

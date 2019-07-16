@@ -44,13 +44,10 @@ const Footer: React.SFC<IFooterProps> = ({}) => {
                         <div className="col-sm-3">
                             <h3 className="footer-heading">Contact Us</h3>
                             <li className="footer-text">
-                                hi@expressionmedia.com
+                                exmdigital@gmail.com
                             </li>
                             <li className="footer-text">
-                                +234 500 500 5000
-                            </li>
-                            <li className="footer-text">
-                                +234 500 500 5000
+                                +234 816 973 2091
                             </li>
                             <li className="icons">
                                 <span> <a href="https://www.facebook.com/exmdigitalagency/" target="_blank"><img src="/static/img/svg/facebookic.svg" alt="facebook"/></a></span>

@@ -85,7 +85,7 @@ const Home: NextFunctionComponent<{}> = (): JSX.Element => {
           <div className="container">
             <div className="row">
               <div className="col-sm-9">
-                <h4 className="heading-four">Need to Create a Solution? <p className="paragraph-four">Lets discuss your next project</p></h4>
+                <h4 className="heading-four">Need to Create a Solution? <p className="paragraph-four">Let's discuss your next project</p></h4>
                 <p className="paragraph-five">Our team of creatives are ready to help, you can click on
 the button to get started.</p>
               </div>
