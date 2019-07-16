@@ -14,7 +14,7 @@ if (isDev) {
     require('dotenv').config();
 }
 
-const port = parseInt(process.env.APP_PORT, 10) || 9090;
+const port = parseInt(process.env.APP_PORT, 10) || 9000;
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 
