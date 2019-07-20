@@ -7,9 +7,7 @@ interface IFooterFormProps {
 
 }
 
-const FooterForm: React.SFC<IFooterFormProps> = ({
-
-                                                 }) => {
+const FooterForm: React.SFC<IFooterFormProps> = ({}) => {
     return (
         <div>
             <form className="footer-form">

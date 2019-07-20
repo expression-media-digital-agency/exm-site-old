@@ -1,6 +1,9 @@
  export const constants = {
     CONTACT_SUBJECT: 'Contact from exm-site',
-    SMTP_HOST: 'smtp.gmail.com',
-    SMTP_PORT: 465,
-    SMTP_SECURE: true,
+    CONTACT_NUMBER: '+234 816 973 2091',
+};
+
+export const responseMessages = {
+    MAILS_SENT: 'Emails sent successfully',
+    MAIL_NOT_SENT: 'Emails not sent successfully'
 };

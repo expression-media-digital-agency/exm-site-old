@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import FooterForm from '../Footer-form';
+import { constants } from '../../constants/constants';
 
 interface IFooterProps {
 
@@ -47,7 +48,7 @@ const Footer: React.SFC<IFooterProps> = ({}) => {
                                 exmdigital@gmail.com
                             </li>
                             <li className="footer-text">
-                                +234 816 973 2091
+                                {constants.CONTACT_NUMBER}
                             </li>
                             <li className="icons">
                                 <span> <a href="https://www.facebook.com/exmdigitalagency/" target="_blank"><img src="/static/img/svg/facebookic.svg" alt="facebook"/></a></span>
