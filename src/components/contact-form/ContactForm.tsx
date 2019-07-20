@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt, faEnvelope, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
-import { constants } from 'constants/constants';
+import { constants } from '../../constants/constants';
 
 const ContactForm: React.SFC = ({}) =>  {
     return (
