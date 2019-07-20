@@ -1,60 +1,82 @@
-import * as nodemailer from 'nodemailer';
+import Mailgun from 'mailgun-js';
+import { config } from '../config/index';
+import { constants, responseMessages } from '../constants/constants';
 
-import { constants } from '../constants/constants';
+const domain = config.mailgunDomainName;
+const apiKey = config.mailgunApiKey;
 
+const mailgun = Mailgun({ apiKey, domain });
 
-interface ITransport {
-    host: string;
-    port: number;
-    secure: boolean,
-    auth: {
-        user: IAuth;
-    }
-}
-
-interface IAuth {
-    user: IEmailSender;
-    pass: string;
-}
-
-interface IEmailOptions {
+interface IEmailData {
     from: string;
-    to: [string] | string;
     subject: string;
+    to: string,
     text: string;
 }
 
-interface IEmailSender {
-    name: string;
-    address: string;
+interface IEmailError {
+    error: object,
+    message: string,
+    status: string | number,
 }
 
-const transportOptions: ITransport = {
-    host: constants.SMTP_HOST,
-    port: constants.SMTP_PORT,
-    secure: constants.SMTP_SECURE,
-    auth: {
-        user: process.env.EMAIL_SENDER,
-        pass: process.env.EMAIL_PW
-    }
-};
+interface IEmailFormData {
+    name: string | undefined;
+    email: string;
+    message: string;
+    company: string | undefined;
+    address: string | undefined;
 
-const _createTransport = (): any => {
-    return nodemailer.createTransport(transportOptions);
-};
+}
 
-const sendMail: any = (to: [string] | string, subject: string, text: string) => new Promise((resolve, reject) => {
+export const sendMail = async (to: string, message: string, subject: string | undefined, from: string | undefined) => {
 
-    to = Array.isArray(to) ? to.toString() : to;
-
-    const mailOptions: IEmailOptions = {
-        from: process.env.EMAIL_SENDER, to, subject, text
+    const data: IEmailData = {
+        from,
+        subject,
+        to,
+        text: message
     };
-    const transporter = _createTransport();
 
-    return transporter.sendMail(mailOptions)
-        .then(info => resolve(info))
-        .catch(err => reject(err));
-});
+    try {
+        const body = await mailgun.messages().send(data)
+        if (body) {
+            return { message: responseMessages.MAILS_SENT, data: body.message, code: 200 };
+        } else {
+            return {
+                error: {},
+                message: responseMessages.MAIL_NOT_SENT,
+                status: 503
+            };
+        }
+    } catch (err) {
+        const error: IEmailError = {
+            error: err.stack,
+            message: err.message,
+            status: err.status
+        };
+        return error;
+    }
+}
 
-export default sendMail;
+export const handleContact = (data: IEmailFormData) => {
+    const { email, message, name, company, address } = data;
+    const { exmEmail } = config;
+    const emailContent = formatContactEmailFromPageParams(email, message, name, company, address);
+    return sendMail(exmEmail, emailContent, constants.CONTACT_SUBJECT, exmEmail);
+}
+
+const formatContactEmailFromPageParams = (email: string, message: string, name: string | undefined,
+    company: string | undefined, address: string | undefined): string => {
+
+    const formattedText = `
+        ${message}
+
+        Name: ${name}
+        Email: ${email}
+        Company: ${company}
+        Address: ${address}
+        `;
+
+    return formattedText;
+}
