@@ -1,10 +1,54 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt, faEnvelope, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
 import { constants } from '../../constants/constants';
+import  {handleContact} from '../../lib/emailSender'
 
-const ContactForm: React.SFC = ({}) =>  {
+
+interface IState {
+    name: string | undefined;
+    email: string;
+    message: string;
+    company: string | undefined;
+    address: string | undefined;
+
+}
+
+interface IProps {
+
+}
+
+class ContactForm extends React.PureComponent< IProps, IState>  {
+    state: IState;
+  
+  constructor(props: IProps) {
+    super(props);
+
+    this.state = { 
+        name: '',
+        email: '',
+        message: '',
+        company: '',
+        address: '',
+    };
+  }
+
+  handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    event.preventDefault();
+
+    this.setState({[event.target.name]: event.target.value});
+    console.log(this.state)
+    
+}
+
+handleFormSubmit = (event: React.FormEvent<HTMLInputElement>) => {
+    event.preventDefault();
+    handleContact(this.state)
+
+  };
+
+ render(){
     return (
         <div>
             <section className="contact-form  animated fadeIn delay-3s">
@@ -23,33 +67,33 @@ const ContactForm: React.SFC = ({}) =>  {
                             <form>
                                 <div className="form-row">
                                     <div className="form-group col-md-6">
-                                        <input type="text" className="form-control" id="name"
+                                        <input name="name" onChange={this.handleInputChange} type="text" className="form-control" id="name"
                                                aria-describedby="emailHelp" placeholder="Name" required/>
                                     </div>
                                     <div className="form-group col-md-6">
-                                        <input type="text" className="form-control" id="company"
+                                        <input name="company"  onChange={this.handleInputChange} type="text" className="form-control" id="company"
                                                placeholder="Company"/>
                                     </div>
                                 </div>
     
                                 <div className="form-row">
                                     <div className="form-group col-md-6">
-                                        <input type="email" className="form-control" id="email"
+                                        <input name="email"  onChange={this.handleInputChange} type="email" className="form-control" id="email"
                                                aria-describedby="emailHelp" placeholder="Email"/>
                                     </div>
                                     <div className="form-group col-md-6">
-                                        <input type="text" className="form-control" id="address"
+                                        <input onChange={this.handleInputChange} name="address" type="text" className="form-control" id="address"
                                               placeholder="Address" required/>
                                     </div>
                                 </div>
                                 <div className="form-row">
                                     <div className="form-group col-md-12">
-                                        <textarea className="form-control" name="message" id="textarea"
+                                        <textarea onChange={this.handleInputChange} className="form-control" name="message" id="textarea"
                                                  rows="4" placeholder="Message" required/>
                                     </div>
                                 </div>
                                 <div className="text-right">
-                                    <button type="submit" className="btn btn-footer">Send</button>
+                                    <button onClick={this.handleFormSubmit} type="submit" className="btn btn-footer">Send</button>
                                 </div>
                             </form>
                         </div>
@@ -58,6 +102,8 @@ const ContactForm: React.SFC = ({}) =>  {
             </section>
         </div>
     );
+ }
+    
 };
 
 export default ContactForm;

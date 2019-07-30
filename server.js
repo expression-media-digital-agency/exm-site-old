@@ -4,20 +4,19 @@ const next = require('next');
 const { join } = require('path');
 const { parse } = require('url');
 const compression = require('compression');
-
+const dotenv = require("dotenv");
 const routes = require('./src/routes');
 
 const isDev = process.env.NODE_ENV === 'development';
 
 // On dev, load the env variables from the `.env` file but on production don't (the variables are loaded from the k8s instance)
 if (isDev) {
-    require('dotenv').config();
+    dotenv.config();
 }
 
 const port = parseInt(process.env.APP_PORT, 10) || 9000;
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
-
 const handler = routes.getRequestHandler(app);
 
 app
