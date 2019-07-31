@@ -1,12 +1,14 @@
-import Mailgun from 'mailgun-js';
+import mailgun from 'mailgun.js';
 import { config } from '../config/index';
 import { constants, responseMessages } from '../constants/constants';
 
 const domain = config.mailgunDomainName;
 const apiKey = config.mailgunApiKey;
-const mailgun = Mailgun({ apiKey, domain });
 
-console.log(config)
+const mg = mailgun.client({
+    username: 'api',
+    key: apiKey,
+});
 
 interface IEmailData {
     from: string;
@@ -30,7 +32,7 @@ interface IEmailFormData {
 
 }
 
-export const sendMail = async (to: string, message: string, subject: string | undefined, from: string | undefined) => {
+export const sendMail = async (to: string, message: string, subject: string, from: string) => {
 
     const data: IEmailData = {
         from,
@@ -40,7 +42,7 @@ export const sendMail = async (to: string, message: string, subject: string | un
     };
 
     try {
-        const body = await mailgun.messages().send(data)
+        const body = await mg.messages.create(domain, data);
         if (body) {
             return { message: responseMessages.MAILS_SENT, data: body.message, code: 200 };
         } else {

@@ -4,7 +4,7 @@ const next = require('next');
 const { join } = require('path');
 const { parse } = require('url');
 const compression = require('compression');
-const dotenv = require("dotenv");
+const dotenv = require('dotenv');
 const routes = require('./src/routes');
 
 const isDev = process.env.NODE_ENV === 'development';

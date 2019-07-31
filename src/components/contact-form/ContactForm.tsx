@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt, faEnvelope, faPhoneAlt } from '@fortawesome/free-solid-svg-icons'
 import { constants } from '../../constants/constants';
@@ -38,9 +37,8 @@ class ContactForm extends React.PureComponent< IProps, IState>  {
     event.preventDefault();
 
     this.setState({[event.target.name]: event.target.value});
-    console.log(this.state)
-    
-}
+    // console.log(this.state);
+};
 
 handleFormSubmit = (event: React.FormEvent<HTMLInputElement>) => {
     event.preventDefault();

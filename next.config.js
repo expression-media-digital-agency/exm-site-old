@@ -1,9 +1,16 @@
 /* eslint-disable no-param-reassign */
 /* eslint-disable @typescript-eslint/no-var-requires */
-const path = require('path');
+// const path = require('path');
 
 // Webpack plugins
+const webpack = require('webpack');
+require('dotenv').config();
 
+console.log('************************************');
+console.log(`Building For: ${process.env.NODE_ENV}`);
+console.log('************************************');
+
+const path = require('path');
 
 // Next Plugins
 const withPlugins = require('next-compose-plugins');
@@ -21,6 +28,10 @@ const nextConfig = {
 	webpack(config) {
 		// Allow Next to resolve Typescript custom paths
 		config.resolve.modules.unshift(__dirname);
+
+		config.plugins.push(
+			new webpack.EnvironmentPlugin(process.env),
+		);
 
 		// Setup aliases
 		config.resolve.alias = {
