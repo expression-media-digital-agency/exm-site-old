@@ -14,11 +14,12 @@ const About: NextFunctionComponent<{}> = (): JSX.Element => {
         <div className="container">
           <div className="row contact">
             <div className="col-sm-7">
-              <h1 className="heading-one animated fadeIn delay-2s" >Digital Solutions for companies<p className="paragraph-two">The new era of digital transformation of your company</p></h1>
+              <h1 className="heading-one animated fadeIn delay-2s" >Digital Solutions for companies</h1>
+              <p className="paragraph-two">The new era of digital transformation of your company</p>
             </div>
             <div className="col-sm-5 animated fadeIn delay-2s">
-              <div className="text-center custom-shadow">
-                <img src="/static/img/svg/knowus.svg" className="img-fluid" alt="knowus-img"/>
+              <div className="text-center">
+                <img src="/static/img/svg/knowus2.svg" className="img-fluid" alt="knowus-img"/>
               </div>
             </div>
           </div>
@@ -39,7 +40,7 @@ const About: NextFunctionComponent<{}> = (): JSX.Element => {
               ExM works to explore all the resources and digital trends that the market offers to develop your business through different IT solutions both cloud and on-premise: digitalization of processes, web or mobile applications, collaborative environments and content management, among others. These digital solutions allow companies and businesses to continue advancing on the path to digital transformation hence giving voice and visibility to their business.
               <br/>
               <br/>
-              <hr/>
+              <hr></hr>
               <br/>
               Our dynamic team is composed of different complementary profiles, strategists, developers, managers, creatives, all at the service of your company and we make a point of establishing a real relationship of trust with our customers.
               </p>
@@ -52,7 +53,7 @@ const About: NextFunctionComponent<{}> = (): JSX.Element => {
           <div className="container-fluid">
             <div className="row">
                 <div className="col-sm-6 about text-center">
-                  <h2 className="heading-three">About</h2>
+                  <h2 className="heading-three">About Us</h2>
                   <hr className="underline"/>
                 </div>
                 <div className="col-sm-6 text text-center">
