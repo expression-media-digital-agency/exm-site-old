@@ -6,9 +6,9 @@
   "scripts": {
     "build": "next build",
     "compile:scss": "node-sass src/styles/scss/main.scss src/styles/css/style.css -w",
-    "dev": "NODE_ENV=development nodemon server.js",
+    "dev": "next",
     "lint": "eslint . --ext .js,.ts,.tsx",
-    "start": " next start -p $PORT",
+    "start": "next start",
     "start:prod": "NODE_ENV=production node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
