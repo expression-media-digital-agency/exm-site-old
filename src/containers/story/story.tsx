@@ -14,7 +14,7 @@ const About: NextFunctionComponent<{}> = (): JSX.Element => {
         <div className="container">
           <div className="row contact">
             <div className="col-sm-7">
-              <h1 className="heading-one animated fadeIn delay-2s" >Get to know us <p className="paragraph-two">Your Success becomes our story</p></h1>
+              <h1 className="heading-one animated fadeIn delay-2s" >Digital Solutions for companies<p className="paragraph-two">The new era of digital transformation of your company</p></h1>
             </div>
             <div className="col-sm-5 animated fadeIn delay-2s">
               <div className="text-center custom-shadow">
@@ -25,6 +25,29 @@ const About: NextFunctionComponent<{}> = (): JSX.Element => {
         </div>
       </header>
       <main className="main">
+        
+      <section className="know-us">
+      <div className="container-fluid">
+        <div className="row">
+            
+            <div className="col-sm-12 text text-center">
+              <p className="paragraph-three">Digital Solutions respond to the diverse business needs with cutting-edge technologiesthat allow us to delve into the digital transformation of our customers, always focusingon the transformation of the business processes and specific needs.
+              <br/>
+              <br/>
+              <hr/>
+              <br/>
+              ExM works to explore all the resources and digital trends that the market offers to develop your business through different IT solutions both cloud and on-premise: digitalization of processes, web or mobile applications, collaborative environments and content management, among others. These digital solutions allow companies and businesses to continue advancing on the path to digital transformation hence giving voice and visibility to their business.
+              <br/>
+              <br/>
+              <hr/>
+              <br/>
+              Our dynamic team is composed of different complementary profiles, strategists, developers, managers, creatives, all at the service of your company and we make a point of establishing a real relationship of trust with our customers.
+              </p>
+            </div>
+        </div>
+      </div>
+    </section>
+
         <section className="know-us">
           <div className="container-fluid">
             <div className="row">
@@ -46,29 +69,12 @@ const About: NextFunctionComponent<{}> = (): JSX.Element => {
           <div className="container-fluid">
             <div className="row">
               <div className="col-sm-6 text text-center">
-              <p className="paragraph-three">Our team of Creative individuals are here to see
-                 to it that your desire is satisfied by giving 
-                 you exactly what you want.</p>
+              <p className="paragraph-three">Small or big projects, ExM manages each mission with the same requirement of quality, it is involved in your project, appropriates it and aims at your objectives. To respond to the diverse needs of your business, our team of experts designs and develops these solutions, using cutting-edge technologies</p>
               </div>
               <div className="col-sm-6 mission text-center">
-                <h2 className="heading-three">Mission</h2>
+                <h2 className="heading-three">OUR SERVICES</h2>
                 <hr className="underline"/>
               </div>
-            </div>
-          </div>
-        </section>
-        <section className="know-us">
-          <div className="container-fluid">
-            <div className="row">
-                <div className="col-sm-6 vision text-center">
-                  <h2 className="heading-three">Vision</h2>
-                  <hr className="underline"/>
-                </div>
-                <div className="col-sm-6 text text-center">
-                <p className="paragraph-three">Our team of Creative individuals are here to see
-                  to it that your desire is satisfied by giving 
-                  you exactly what you want.</p>
-                </div>
             </div>
           </div>
         </section>

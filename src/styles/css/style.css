@@ -2265,7 +2265,7 @@ input[type="button"].btn-block {
   list-style: none; }
 
 .nav-link {
-  display: block;
+  display: inline-flex;
   padding: 0.5rem 1rem; }
   .nav-link:hover, .nav-link:focus {
     text-decoration: none; }
@@ -4049,7 +4049,7 @@ a:hover {
   color: #FFFFFF; }
 
 .heading-three {
-  font-size: 70px;
+  font-size: 50px;
   font-weight: bold;
   color: #FFFFFF; }
 
@@ -4070,7 +4070,7 @@ a:hover {
 
 .paragraph-three {
   color: #696969;
-  font-weight: 600;
+  font-weight: 300;
   font-size: 20px; }
 
 .paragraph-four {
