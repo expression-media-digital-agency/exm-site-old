@@ -4,8 +4,9 @@ import { constants, responseMessages } from '../constants/constants';
 
 const domain = config.mailgunDomainName;
 const apiKey = config.mailgunApiKey;
-
 const mailgun = Mailgun({ apiKey, domain });
+
+console.log(config)
 
 interface IEmailData {
     from: string;

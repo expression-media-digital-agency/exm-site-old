@@ -5,7 +5,7 @@ interface ICreateSolutionProps {
 
 }
 
-const CreateSolution: React.SFC<ICreateSolutionProps> = ({}) => {
+const CreateSolution: React.FC<ICreateSolutionProps> = ({}) => {
     return (
         <div>
             <section className="solution">
