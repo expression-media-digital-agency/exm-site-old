@@ -57,7 +57,10 @@ body {
 
 hr {
   box-sizing: content-box;
-  height: 0;
+  height: 2px;
+  box-shadow: 0 1px #bdb7bd;
+  width: 5vw;
+  align-items: center; 
   overflow: visible; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -383,8 +386,12 @@ mark,
     content: "\2014\00A0"; }
 
 .img-fluid {
-  max-width: 100%;
-  height: auto; }
+  max-width: 100vw;
+  height: 100vh; }
+
+.img-fluid-logo {
+    max-width: 70%;
+    height: auto; }
 
 .img-thumbnail {
   padding: 0.25rem;
@@ -457,16 +464,16 @@ pre {
 
 .container-fluid {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 5px;
+  padding-left: 5px;
   margin-right: auto;
   margin-left: auto; }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px; }
+  margin-right: auto;
+  margin-left: auto; }
 
 .no-gutters {
   margin-right: 0;
@@ -2336,7 +2343,7 @@ input[type="button"].btn-block {
     justify-content: space-between; }
 
 .navbar-brand {
-  display: inline-block;
+  display: flex;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
@@ -4039,7 +4046,7 @@ a:hover {
   background-color: #FFFFFF; }
 
 .heading-one {
-  font-size: 80px;
+  font-size: 6vw;
   font-weight: bold;
   color: #424242; }
 
@@ -4049,7 +4056,7 @@ a:hover {
   color: #FFFFFF; }
 
 .heading-three {
-  font-size: 50px;
+  font-size: 5vw;
   font-weight: bold;
   color: #FFFFFF; }
 
@@ -4066,12 +4073,12 @@ a:hover {
 .paragraph-two {
   color: #424242;
   font-weight: bold;
-  font-size: 30px; }
+  font-size: 3vw; }
 
 .paragraph-three {
   color: #696969;
   font-weight: 300;
-  font-size: 20px; }
+  font-size: 2vw; }
 
 .paragraph-four {
   color: #FFFFFF;
@@ -4084,8 +4091,8 @@ a:hover {
   font-size: 20px; }
 
 .underline {
-  border-bottom: solid 10px #FFFFFF;
-  width: 200px;
+  border-bottom: solid 5px #FFFFFF;
+  width: 15vw;
   margin-top: -10px;
   box-sizing: border-box; }
 
@@ -4160,7 +4167,7 @@ a:hover {
 .custom-shadow {
   border-radius: 10px;
   border: none;
-  padding: 60px;
+  /*padding: 1vw;*/
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 0px 19px 7px #aba6ab;
   -moz-box-shadow: 0px 0px 19px 7px #aba6ab;
