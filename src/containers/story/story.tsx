@@ -33,9 +33,11 @@ const About: NextFunctionComponent<{}> = (): JSX.Element => {
                   <hr className="underline"/>
                 </div>
                 <div className="col-sm-6 text text-center">
-                  <p className="paragraph-three">Our team of Creative individuals are here to see
-                  to it that your desire is satisfied by giving 
-                  you exactly what you want.</p>
+                  <p className="paragraph-three">Are you looking for a dynamic team that can transform your business into a digital solution that will make your audience and customers patronise your service? Look no further for ExM has got you covered.
+                  <br/>
+                  <br/>
+                  At ExM, we utilise technologies to create, develop and integrate effective tools to serve your business. Our team puts its expertise at your disposal and offers a quality service to guide you, accompany you and to realize your business projects on all digital media.
+                  </p>
                 </div>
             </div>
           </div>
