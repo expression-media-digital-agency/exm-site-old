@@ -28,7 +28,7 @@ const NavBar: React.SFC<INavBarProps> = ({
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link href="/">
+                        <Link href="/#services">
                             <a className="nav-link hvr-bob">Services</a>
                         </Link>
                     </li>

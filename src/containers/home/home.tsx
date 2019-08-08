@@ -36,7 +36,7 @@ const Home: NextFunctionComponent<{}> = (): JSX.Element => {
         <section className="curly-img" id="curly-img">
             <img src="/static/img/svg/curvy.svg" className="img-fluid" alt="curly-img"/>
         </section>
-        <section className="services">
+        <section id="services" className="services">
           <div className="container">
             <div className="row">
               <div className="col-sm-6 text-center">
