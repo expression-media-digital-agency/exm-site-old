@@ -1,4 +1,4 @@
-import mailgun from 'mailgun.js';
+/*import mailgun from 'mailgun.js';
 import { config } from '../config/index';
 import { constants, responseMessages } from '../constants/constants';
 
@@ -83,3 +83,4 @@ const formatContactEmailFromPageParams = (email: string, message: string, name: 
 
     return formattedText;
 }
+*/

@@ -16,12 +16,12 @@ const Footer: React.SFC<IFooterProps> = ({}) => {
                         <div className="col-sm-3">
                             <h3 className="footer-heading">Explore</h3>
                                 <li>
-                                    <Link href="#">
+                                    <Link href="/portfolio">
                                         <a className="footer-text">Portfolio</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="#">
+                                    <Link href="/">
                                         <a className="footer-text">Careers</a>
                                     </Link>
                                 </li>
@@ -31,12 +31,12 @@ const Footer: React.SFC<IFooterProps> = ({}) => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="#">
+                                    <Link href="/">
                                         <a className="footer-text">Term of Service</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="">
+                                    <Link href="/">
                                         <a className="footer-text">Help</a>
                                     </Link>
                                 </li>

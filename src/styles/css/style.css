@@ -386,8 +386,8 @@ mark,
     content: "\2014\00A0"; }
 
 .img-fluid {
-  max-width: 100vw;
-  height: 100vh; }
+  max-width: 100%;
+  height: auto; }
 
 .img-fluid-logo {
     max-width: 70%;
@@ -2334,13 +2334,13 @@ input[type="button"].btn-block {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 1rem; }
+  padding: 5px 10px; }
   .navbar > .container,
   .navbar > .container-fluid {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-around; }
 
 .navbar-brand {
   display: flex;
@@ -3918,7 +3918,7 @@ a.text-success:hover, a.text-success:focus {
   color: #17a2b8 !important; }
 
 a.text-info:hover, a.text-info:focus {
-  color: #0f6674 !important; }
+  color: #00a2ff !important; }
 
 .text-warning {
   color: #ffc107 !important; }
@@ -4042,11 +4042,17 @@ a:hover {
   text-decoration: none; }
 
 .header {
-  padding-top: 100px;
+  padding-top: 40px;
   background-color: #FFFFFF; }
 
+.heading-about {
+  font-size: 7vw;
+  font-weight: bold;
+  color: #424242;
+}
+
 .heading-one {
-  font-size: 6vw;
+  font-size: 4rem;
   font-weight: bold;
   color: #424242; }
 
@@ -4056,15 +4062,26 @@ a:hover {
   color: #FFFFFF; }
 
 .heading-three {
-  font-size: 5vw;
+  font-size: 4vw;
   font-weight: bold;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  padding-right: 10px; }
 
 .heading-four {
   font-size: 50px;
   font-weight: bold;
   color: #FFFFFF; }
 
+.heading-header {
+  font-size: 30px;
+  font-weight: 300;
+  color: #FFFFFF; 
+}
+
+.paragraph-para {
+  color: #424242;
+  font-size: 20pt;
+}
 .paragraph-one {
   color: #FFFFFF;
   font-weight: 500;
@@ -4073,7 +4090,7 @@ a:hover {
 .paragraph-two {
   color: #424242;
   font-weight: bold;
-  font-size: 3vw; }
+  font-size: 16pt; }
 
 .paragraph-three {
   color: #696969;
@@ -4104,7 +4121,7 @@ a:hover {
     height: 50px; }
 
 .header .heading-one {
-  margin-bottom: 50px; }
+  margin-bottom: 20px; }
 
 .header a:hover {
   text-decoration: none;
@@ -4113,9 +4130,17 @@ a:hover {
 
 .main .services {
   background-color: #0F79D1;
-  padding-top: 100px;
+  padding-top: 50px;
   margin-top: -10px;
   padding-bottom: 100px; }
+
+.div-about {
+  background-color: rgb(124, 124, 124);
+  padding-top: 100px;
+  margin-top: -10px;
+  padding-bottom: 100px;
+} 
+
 
 .main .create-solution {
   background-color: #0F79D1;
@@ -4138,7 +4163,7 @@ a:hover {
   color: #424242; }
 
 .header {
-  padding-bottom: 170px; }
+  padding-bottom: 50px; }
   .header .contact-heading {
     color: #0F79D1;
     font-weight: bold;
@@ -4174,7 +4199,7 @@ a:hover {
   box-shadow: 0px 0px 19px 7px #aba6ab; }
 
 .contact {
-  padding-bottom: 100px; }
+  padding-bottom: 20px; }
 
 .contact .heading-one {
   margin-top: 20px;
@@ -4184,16 +4209,28 @@ a:hover {
   background-color: #0F79D1;
   padding: 140px; }
 
+.juice-img {
+  padding: 30px;
+}
+
 .mission {
   background-color: #CE3737;
-  padding: 140px; }
+  padding-top: 250px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 250px;
+  height: 140px;
+
+  align-items: center; 
+}
 
 .vision {
   background-color: #FDCA01;
   padding: 140px; }
 
 .text {
-  padding: 140px; }
+  padding: 20px;
+ }
 
 .navbar {
   background-color: #FFFFFF;
