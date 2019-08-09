@@ -1,6 +1,5 @@
 /* eslint-disable no-param-reassign */
 /* eslint-disable @typescript-eslint/no-var-requires */
-// const path = require('path');
 
 // Webpack plugins
 const webpack = require('webpack');
