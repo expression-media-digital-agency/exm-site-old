@@ -15,16 +15,13 @@ const Contact: NextFunctionComponent<{}> = (): JSX.Element => {
       <header className="header">
         <div className="container">
           <div className="row">
-            <div className="col-sm-7">
+            <div className="col-sm-12">
               <h1 className="contact-heading  animated fadeIn delay-1s">
                 Get in touch
               </h1>
               <p className="contact-paragraph  animated fadeIn delay-2s">
               Expression Media also called “ExM”, partners with businesses and organizations to assist them focus on the core of their businesses. 
               </p>
-            </div>
-            <div className="col-sm-5">
-
             </div>
           </div>
         </div>

@@ -20,11 +20,16 @@ const NavBar: React.SFC<INavBarProps> = ({
                     <span className="navbar-toggler-icon"></span>
                 </button>
 
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav animated fadeInDown delay-2s">
+                <div className="collapse topnav navbar-collapse" id="navbarSupportedContent">
+                    <ul className="navbar-nav mover animated fadeInDown delay-2s">
                     <li className="nav-item active">
                         <Link href="/story">
                             <a className="nav-link hvr-bob">Our Story</a>
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link href="/portfolio">
+                            <a className="nav-link hvr-bob">Portfolio</a>
                         </Link>
                     </li>
                     <li className="nav-item">
@@ -42,6 +47,7 @@ const NavBar: React.SFC<INavBarProps> = ({
                             <a className="nav-link hvr-bob">Contact</a>
                         </Link>
                     </li>
+                    
                     </ul>
                 </div>
             </div>

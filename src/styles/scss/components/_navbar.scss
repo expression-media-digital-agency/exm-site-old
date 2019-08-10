@@ -5,7 +5,8 @@
     -moz-box-shadow: 0px 2px 3px 0px rgba(189,183,189,1);
     box-shadow: 0px 2px 3px 0px rgba(189,183,189,1);
     .exm-logo{
-        width: 100px;
+        width: 80px;
+        height: auto;
 
     }
     .nav-link{
@@ -17,6 +18,14 @@
 
 }
 
+.topnav {
+    overflow: hidden;
+    
+    .mover {
+        float: right;
+        text-align: center;
+    }
+}
 
 
 

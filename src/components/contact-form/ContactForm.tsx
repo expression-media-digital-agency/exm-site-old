@@ -49,10 +49,10 @@ handleFormSubmit = (event: React.FormEvent<HTMLInputElement>) => {
  render(){
     return (
         <div>
-            <section className="contact-form  animated fadeIn delay-3s">
+            <section className="contact-form  animated fadeIn delay-1s">
                 <div className="container">
                     <div className="row">
-                        <div className="col-sm-4 form-left-side">
+                        <div className="col-sm-5 form-left-side">
                             <h2 className="paragraph-four">
                                 Contact Information
                             </h2>
@@ -61,7 +61,7 @@ handleFormSubmit = (event: React.FormEvent<HTMLInputElement>) => {
                             <p><span><FontAwesomeIcon icon={faEnvelope}/></span> exmdigitalagency@gmail.com</p>
                             <p><span><FontAwesomeIcon icon={faPhoneAlt}/></span>{constants.CONTACT_NUMBER}</p>
                         </div>
-                        <div className="col-sm-8 form-right-side">
+                        <div className="col-sm-7 form-right-side">
                             <form>
                                 <div className="form-row">
                                     <div className="form-group col-md-6">
