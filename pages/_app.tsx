@@ -11,7 +11,6 @@ import 'styles/css/style.css';
 
 // //Scripts
 import 'jquery/dist/jquery.min.js'
-
 // Components
 
 interface IAppState {
