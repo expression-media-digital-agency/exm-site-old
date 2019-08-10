@@ -16,7 +16,7 @@ const Footer: React.SFC<IFooterProps> = ({}) => {
                         <div className="col-sm-3">
                             <h3 className="footer-heading">Explore</h3>
                                 <li>
-                                    <Link href="/our-story">
+                                    <Link href="/story">
                                         <a className="footer-text">Our Story</a>
                                     </Link>
                                 </li>

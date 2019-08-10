@@ -30,8 +30,6 @@ class ContactForm extends React.PureComponent< IProps, IState>  {
                             <h2 className="paragraph-four">
                                 Contact Information
                             </h2>
-                            {/* <p><span><FontAwesomeIcon icon={faMapMarkerAlt}/></span> Gibson House, No 12
-                                Flatten building, Ile Ife.</p> */}
                             <p><span><FontAwesomeIcon icon={faEnvelope}/></span> exmdigitalagency@gmail.com</p>
                             <p><span><FontAwesomeIcon icon={faPhoneAlt}/></span>{constants.CONTACT_NUMBER}</p>
                         </div>
