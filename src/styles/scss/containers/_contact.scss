@@ -4,8 +4,9 @@
         color: $color-blue;
         font-weight: bold;
         font-size: $heading-one-font-size;
+        padding-top: $section-padding-top;
     } 
-    .contant-paragraph{
+    .contact-paragraph{
         color:$color-black;
         font-size: $paragraph-five-font-size;
         font-weight: 500;
@@ -32,4 +33,5 @@
             }
         }
     }
+}
 }

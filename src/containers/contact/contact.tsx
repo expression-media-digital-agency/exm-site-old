@@ -20,7 +20,7 @@ const Contact: NextFunctionComponent<{}> = (): JSX.Element => {
                 Get in touch
               </h1>
               <p className="contact-paragraph  animated fadeIn delay-2s">
-              Expression Media also called “ExM”, partners with businesses and organizations to assist them focus on the core of their businesses. 
+              Expression Media partners with businesses and organizations to assist them focus on the core of their businesses. 
               </p>
             </div>
           </div>

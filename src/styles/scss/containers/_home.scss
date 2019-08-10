@@ -9,7 +9,12 @@
         }
     }
     .heading-one{
+        padding-top: $section-padding-top;
         margin-bottom: 50px;
+    }
+
+    .heading-img{
+        padding-top: $section-padding-top;
     }
     a:hover{
         text-decoration: none;

@@ -11,7 +11,7 @@ const NavBar: React.SFC<INavBarProps> = ({
 
   return (
     <div>
-        <nav className="navbar navbar-expand-lg animated fadeInDown delay-1s">
+        <nav className="navbar navbar-expand-lg fixed-top animated fadeInDown delay-1s">
             <div className="container">
                 <Link href="/">
                     <a className="navbar-brand animated fadeInLeft delay-1s"><img className="img-fluid-logo exm-logo" src="/static/img/png/primarysingle.png" alt="exm-logo"/></a>
@@ -21,7 +21,7 @@ const NavBar: React.SFC<INavBarProps> = ({
                 </button>
 
                 <div className="collapse topnav navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav mover animated fadeInDown delay-2s">
+                    <ul className="navbar-nav ml-auto animated fadeInDown delay-2s">
                     <li className="nav-item active">
                         <Link href="/story">
                             <a className="nav-link hvr-bob">Our Story</a>
@@ -33,7 +33,7 @@ const NavBar: React.SFC<INavBarProps> = ({
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link href="/activity">
+                        <Link href="/services">
                             <a className="nav-link hvr-bob">Services</a>
                         </Link>
                     </li>
