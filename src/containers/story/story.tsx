@@ -3,7 +3,7 @@ import { NextFunctionComponent } from 'next';
 import Head from 'next/head';
 import CreateSolution from '../../components/create-solution/CreateSolution';
 
-const About: NextFunctionComponent<{}> = (): JSX.Element => {
+const Story: NextFunctionComponent<{}> = (): JSX.Element => {
   return (
     <>
       <Head>
@@ -14,28 +14,32 @@ const About: NextFunctionComponent<{}> = (): JSX.Element => {
         <div className="container">
           <div className="row contact">
             <div className="col-sm-7">
-              <h1 className="heading-one animated fadeIn delay-2s" >Get to know us <p className="paragraph-two">Your Success becomes our story</p></h1>
+              <h1 className="heading-one animated fadeIn delay-2s" >Digital Solutions for companies</h1>
+              <p className="paragraph-two">The new era of digital transformation of your company</p>
             </div>
             <div className="col-sm-5 animated fadeIn delay-2s">
-              <div className="text-center custom-shadow">
-                <img src="/static/img/svg/knowus.svg" className="img-fluid" alt="knowus-img"/>
+              <div className="text-center">
+                <img src="/static/img/svg/knowus2.svg" className="img-fluid" alt="knowus-img"/>
               </div>
             </div>
           </div>
         </div>
       </header>
       <main className="main">
+
         <section className="know-us">
           <div className="container-fluid">
             <div className="row">
                 <div className="col-sm-6 about text-center">
-                  <h2 className="heading-three">About</h2>
+                  <h2 className="heading-three">Our Services</h2>
                   <hr className="underline"/>
                 </div>
                 <div className="col-sm-6 text text-center">
-                  <p className="paragraph-three">Our team of Creative individuals are here to see
-                  to it that your desire is satisfied by giving 
-                  you exactly what you want.</p>
+                  <p className="paragraph-three">Are you looking for a dynamic team that can transform your business into a digital solution that will make your audience and customers patronise your service? Look no further for ExM has got you covered.
+                  <br/>
+                  <br/>
+                  At ExM, we utilise technologies to create, develop and integrate effective tools to serve your business. Our team puts its expertise at your disposal and offers a quality service to guide you, accompany you and to realize your business projects on all digital media.
+                  </p>
                 </div>
             </div>
           </div>
@@ -44,29 +48,12 @@ const About: NextFunctionComponent<{}> = (): JSX.Element => {
           <div className="container-fluid">
             <div className="row">
               <div className="col-sm-6 text text-center">
-              <p className="paragraph-three">Our team of Creative individuals are here to see
-                 to it that your desire is satisfied by giving 
-                 you exactly what you want.</p>
+              <p className="paragraph-three">Small or big projects, ExM manages each mission with the same requirement of quality, it is involved in your project, appropriates it and aims at your objectives. To respond to the diverse needs of your business, our team of experts designs and develops these solutions, using cutting-edge technologies</p>
               </div>
               <div className="col-sm-6 mission text-center">
-                <h2 className="heading-three">Mission</h2>
+                <h2 className="heading-three">OUR SERVICES</h2>
                 <hr className="underline"/>
               </div>
-            </div>
-          </div>
-        </section>
-        <section className="know-us">
-          <div className="container-fluid">
-            <div className="row">
-                <div className="col-sm-6 vision text-center">
-                  <h2 className="heading-three">Vision</h2>
-                  <hr className="underline"/>
-                </div>
-                <div className="col-sm-6 text text-center">
-                <p className="paragraph-three">Our team of Creative individuals are here to see
-                  to it that your desire is satisfied by giving 
-                  you exactly what you want.</p>
-                </div>
             </div>
           </div>
         </section>
@@ -76,4 +63,4 @@ const About: NextFunctionComponent<{}> = (): JSX.Element => {
   );
 };
 
-export default About;
+export default Story;

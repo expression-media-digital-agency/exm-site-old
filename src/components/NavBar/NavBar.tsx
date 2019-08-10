@@ -11,25 +11,35 @@ const NavBar: React.SFC<INavBarProps> = ({
 
   return (
     <div>
-        <nav className="navbar navbar-expand-lg animated fadeInDown delay-1s">
+        <nav className="navbar navbar-expand-lg fixed-top animated fadeInDown delay-1s">
             <div className="container">
                 <Link href="/">
-                    <a className="navbar-brand animated fadeInLeft delay-1s"><img className="img-fluid exm-logo" src="/static/img/png/exmlogo.png" alt="exm-logo"/></a>
+                    <a className="navbar-brand animated fadeInLeft delay-1s"><img className="img-fluid-logo exm-logo" src="/static/img/svg/EXM Pry Logo.svg" alt="exm-logo"/></a>
                 </Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
 
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav animated fadeInDown delay-2s">
+                <div className="collapse topnav navbar-collapse" id="navbarSupportedContent">
+                    <ul className="navbar-nav ml-auto animated fadeInDown delay-2s">
                     <li className="nav-item active">
                         <Link href="/story">
                             <a className="nav-link hvr-bob">Our Story</a>
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link href="/">
+                        <Link href="/portfolio">
+                            <a className="nav-link hvr-bob">Portfolio</a>
+                        </Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link href="/services">
                             <a className="nav-link hvr-bob">Services</a>
+                        </Link>
+                    </li>
+                    <li className="nav-item active">
+                        <Link href="/about">
+                            <a className="nav-link hvr-bob">About</a>
                         </Link>
                     </li>
                     <li className="nav-item">
@@ -37,6 +47,7 @@ const NavBar: React.SFC<INavBarProps> = ({
                             <a className="nav-link hvr-bob">Contact</a>
                         </Link>
                     </li>
+                    
                     </ul>
                 </div>
             </div>

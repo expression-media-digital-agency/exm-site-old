@@ -1,9 +1,15 @@
 /* eslint-disable no-param-reassign */
 /* eslint-disable @typescript-eslint/no-var-requires */
-const path = require('path');
 
 // Webpack plugins
+const webpack = require('webpack');
+require('dotenv').config();
 
+console.log('************************************');
+console.log(`Building For: ${process.env.NODE_ENV}`);
+console.log('************************************');
+
+const path = require('path');
 
 // Next Plugins
 const withPlugins = require('next-compose-plugins');
@@ -11,6 +17,7 @@ const typescript = require('@zeit/next-typescript');
 const sass = require('@zeit/next-sass');
 const css = require('@zeit/next-css');
 const offline = require('next-offline');
+// const bootstrap = require('bootstrap');
 
 const nextConfig = {
 	distDir: 'build',
@@ -21,6 +28,20 @@ const nextConfig = {
 	webpack(config) {
 		// Allow Next to resolve Typescript custom paths
 		config.resolve.modules.unshift(__dirname);
+
+		config.plugins.push(
+			new webpack.EnvironmentPlugin(process.env),
+		);
+
+		config.plugins.push(
+			new webpack.ProvidePlugin({
+				'$': "jquery",
+				'jQuery': "jquery",
+				'window.jQuery': 'jquery',
+				'Popper': 'popper.js',
+				"Bootstrap": "bootstrap.js"
+			}),
+		);
 
 		// Setup aliases
 		config.resolve.alias = {
@@ -47,17 +68,22 @@ const nextConfig = {
 		// File loader
 		config.module.rules.push({
 			test: /\.(png|jpg|gif)$/,
-			use: [
-				{
-					loader: 'file-loader',
-					options: {
-						name: '[name]_[hash].[ext]',
-						outputPath: 'static/images',
-						publicPath: '/_next/static/images',
-					},
+			use: [{
+				loader: 'file-loader',
+				options: {
+					name: '[name]_[hash].[ext]',
+					outputPath: 'static/images',
+					publicPath: '/_next/static/images',
 				},
-			],
+			}],
 		});
+
+		config.module.rules.push({
+			test: require.resolve('bootstrap'),
+		});
+		config.module.rules.push({
+			test: require.resolve('jquery'),
+		})
 
 		return config;
 	},

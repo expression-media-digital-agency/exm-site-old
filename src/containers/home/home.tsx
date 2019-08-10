@@ -15,7 +15,8 @@ const Home: NextFunctionComponent<{}> = (): JSX.Element => {
         <div className="container">
           <div className="row">
             <div className="col-sm-7">
-              <h1 className="heading-one animated fadeIn delay-2s"> We Create <br/> Digital Solutions</h1>
+              <h1 className="heading-one animated fadeIn delay-2s">Expression Media<br/>Digital Agency</h1>
+              <p className="paragraph-two">Passion. Innovation. Creativity.</p>
               <div>
                 <Link href="/contact">
                   <a className="btn-get-started hvr-shadow-radial animated fadeInUp delay-3s">
@@ -25,8 +26,8 @@ const Home: NextFunctionComponent<{}> = (): JSX.Element => {
               </div>
             </div>
             <div className="col-sm-5">
-              <div className="text-center animated fadeIn delay-2s">
-                <img src="/static/img/svg/pc-landing1.svg" className="img-fluid" alt=""/>
+              <div className="text-center animated heading-img fadeIn delay-2s">
+                <img src="/static/img/svg/man&woman.svg" className="img-fluid" alt=""/>
               </div>
             </div>
           </div>
@@ -36,7 +37,7 @@ const Home: NextFunctionComponent<{}> = (): JSX.Element => {
         <section className="curly-img" id="curly-img">
             <img src="/static/img/svg/curvy.svg" className="img-fluid" alt="curly-img"/>
         </section>
-        <section className="services">
+        <section id="services" className="services">
           <div className="container">
             <div className="row">
               <div className="col-sm-6 text-center">
@@ -44,9 +45,7 @@ const Home: NextFunctionComponent<{}> = (): JSX.Element => {
               </div>
               <div className="col-sm-6">
                 <h2 className="heading-two">Branding</h2>
-                <p className="paragraph-one">Our team of Creative individuals are here to see 
-                to it that your desire is satisfied by giving 
-                you exactly what you want.</p>
+                <p className="paragraph-one">Our team makes your communication beautiful and intelligible. We clarify your message. We give meaning to your brand. We solve complex problems, but we do it with style and simplicity.</p>
               </div>
             </div>
           </div>
@@ -56,9 +55,7 @@ const Home: NextFunctionComponent<{}> = (): JSX.Element => {
             <div className="row">
               <div className="col-sm-6">
                 <h2 className="heading-two">Digital Marketing</h2>
-                <p className="paragraph-one">Our team of Creative individuals are here to see
-                 to it that your desire is satisfied by giving 
-                 you exactly what you want.</p>
+                <p className="paragraph-one">We help you to implement a digital marketing strategy that adapts to your business, allowing you to connect and interact with your current and potential customers.</p>
               </div>
               <div className="col-sm-6 text-center">
                 <img src="/static/img/svg/marketing1.svg" className="img-fluid" alt="digital-img"/>
@@ -74,9 +71,7 @@ const Home: NextFunctionComponent<{}> = (): JSX.Element => {
               </div>
               <div className="col-sm-6">
                 <h2 className="heading-two">Software Development</h2>
-                <p className="paragraph-one">Our team of Creative individuals are here to see
-                 to it that your desire is satisfied 
-                by giving you exactly what you want.</p>
+                <p className="paragraph-one">Our team takes the time in your company to draw the contours of your software to ensure ergonomics and a successful user experience. All these using the latest trends in software development.</p>
               </div>
             </div>
           </div>
@@ -97,51 +92,6 @@ the button to get started.</p>
                 </Link>
                 
               </div>
-            </div>
-          </div>
-        </section>
-        <section className="projects">
-          <div className="container">
-            <div className="row">
-              <div className="col-sm-6 text-left">
-                <h4 className="heading-four">Projects <p className="paragraph-four">We work hand in hand with brands, creating great experience.</p></h4>
-              </div>
-              <div className="col-sm-6"></div>
-            </div>
-            <div className="row">
-            <div className="card-columns">
-              <div className="card">
-                <a href="">
-                <img className="card-img" src="/static/img/png/projects1.png" alt="Card image"/>
-                </a>
-              </div>
-              <div className="card">
-                <a href="">
-                <img className="card-img" src="/static/img/png/projects2.png" alt="Card image"/>
-                </a>
-              </div>
-              <div className="card">
-                <a href="">
-                <img className="card-img" src="/static/img/png/projects2.png" alt="Card image"/>
-                </a>
-              </div>
-              <div className="card">
-                <a href="">
-                <img className="card-img" src="/static/img/png/projects1.png" alt="Card image"/>
-                </a>
-              </div>
-              <div className="card">
-                <a href="">
-                <img className="card-img" src="/static/img/png/projects1.png" alt="Card image"/>
-                </a>
-              </div>
-              <div className="card">
-                <a href="">
-                <img className="card-img" src="/static/img/png/projects2.png" alt="Card image"/>
-                </a>
-              </div>
-            </div>
-                
             </div>
           </div>
         </section>
