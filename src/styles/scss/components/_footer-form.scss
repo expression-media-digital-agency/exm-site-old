@@ -4,4 +4,12 @@
         opacity: 0.8;
         color: $color-white;
     }
+    .input{
+        border: none;
+        border-radius: 20px;
+    }
+    .textarea{
+        border: none;
+        border-radius: 10px;
+    }
 }

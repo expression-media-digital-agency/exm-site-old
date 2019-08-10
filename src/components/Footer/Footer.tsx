@@ -16,13 +16,18 @@ const Footer: React.SFC<IFooterProps> = ({}) => {
                         <div className="col-sm-3">
                             <h3 className="footer-heading">Explore</h3>
                                 <li>
+                                    <Link href="/story">
+                                        <a className="footer-text">Our Story</a>
+                                    </Link>
+                                </li>
+                                <li>
                                     <Link href="/portfolio">
                                         <a className="footer-text">Portfolio</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/">
-                                        <a className="footer-text">Careers</a>
+                                    <Link href="/services">
+                                        <a className="footer-text">Services</a>
                                     </Link>
                                 </li>
                                 <li>
@@ -31,15 +36,11 @@ const Footer: React.SFC<IFooterProps> = ({}) => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/">
-                                        <a className="footer-text">Term of Service</a>
+                                    <Link href="/contact">
+                                        <a className="footer-text">Contact</a>
                                     </Link>
                                 </li>
-                                <li>
-                                    <Link href="/">
-                                        <a className="footer-text">Help</a>
-                                    </Link>
-                                </li>
+                                
                         </div>
 
                         <div className="col-sm-3">

@@ -19,6 +19,11 @@ module.exports = routes()
     pattern: '/',
   })
   .add({
+    name: 'services',
+    page: 'services',
+    pattern: '/services',
+  })
+  .add({
     name: 'contact',
     page: 'contact',
     pattern: '/contact',

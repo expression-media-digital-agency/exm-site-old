@@ -1,5 +1,6 @@
 import React from 'react';
 import { NextFunctionComponent } from 'next';
+import Link from 'next/link';
 import Head from 'next/head';
 import CreateSolution from '../../components/create-solution/CreateSolution';
 
@@ -12,22 +13,32 @@ const About: NextFunctionComponent<{}> = (): JSX.Element => {
 
       <header className="header">
         <div className="container">
-          <div className="row contact">
+          <div className="row">
             <div className="col-sm-7">
-              <h1 className="heading-about animated fadeIn delay-2s" >About Us</h1>
+              <h1 className="heading-one animated fadeIn delay-2s">About Us</h1>
               <p className="paragraph-two">Get to know us</p>
+              <div>
+                <Link href="/contact">
+                  <a className="btn-get-started hvr-shadow-radial animated fadeInUp delay-3s">
+                    Get Started
+                  </a>
+                </Link>
+              </div>
             </div>
-            <div className="col-sm-5 animated fadeIn delay-2s">
-              <div className="text-center">
-                <img src="/static/img/svg/know.svg" className="img-fluid" alt="knowus-img"/>
+            <div className="col-sm-5">
+              <div className="text-center animated fadeIn delay-2s">
+                <img src="/static/img/svg/know.svg" className="img-fluid" alt="get to know us"/>
               </div>
             </div>
           </div>
         </div>
       </header>
+
+
+
       <main className="main">
        
-      <section className="div-about">
+      <section className="services">
           <div className="container-fluid">
             <div className="row">
               <div className="col-sm-6 text-center">
@@ -43,7 +54,7 @@ const About: NextFunctionComponent<{}> = (): JSX.Element => {
           </div>
         </section>
 
-        <section className="div-about">
+        <section className="services">
           <div className="container-fluid">
             <div className="row">
               <div className="col-sm-6 text-center">
@@ -59,7 +70,7 @@ const About: NextFunctionComponent<{}> = (): JSX.Element => {
           </div>
         </section>
 
-        <section className="div-about">
+        <section className="services">
           <div className="container-fluid">
             <div className="row">
               <div className="col-sm-6 text-center">

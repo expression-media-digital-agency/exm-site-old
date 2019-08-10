@@ -3,11 +3,11 @@ import { NextFunctionComponent } from 'next';
 import Head from 'next/head';
 import CreateSolution from '../../components/create-solution/CreateSolution';
 
-const Activity: NextFunctionComponent<{}> = (): JSX.Element => {
+const Services: NextFunctionComponent<{}> = (): JSX.Element => {
   return (
     <>
       <Head>
-        <title>EXM | Story</title>
+        <title>EXM | Services</title>
       </Head>
 
       <header className="header">
@@ -55,4 +55,4 @@ const Activity: NextFunctionComponent<{}> = (): JSX.Element => {
   );
 };
 
-export default Activity;
+export default Services;
