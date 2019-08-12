@@ -6337,6 +6337,11 @@ a:hover {
     float: right;
     text-align: center; }
 
+@media screen and (max-width: 990px) {
+  .navbar {
+    position: absolute !important;
+    top: 0px; } }
+
 .btn-footer {
   background-color: #0F79D1;
   padding: 5px 30px;
