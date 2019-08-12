@@ -8,7 +8,7 @@
     "compile:scss": "node-sass src/styles/scss/main.scss src/styles/css/style.css -w",
     "dev": "next",
     "lint": "eslint . --ext .js,.ts,.tsx",
-    "start": "next start",
+    "start": "next start -p $PORT",
     "start:prod": "NODE_ENV=production node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
