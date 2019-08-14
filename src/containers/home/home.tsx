@@ -8,7 +8,7 @@ const Home: NextFunctionComponent<{}> = (): JSX.Element => {
   return (
     <>
       <Head>
-        <title>EXM | Digital Agency</title>
+        <title>Expression Media | Digital Agency</title>
       </Head>
 
       <header className="header">
@@ -16,7 +16,7 @@ const Home: NextFunctionComponent<{}> = (): JSX.Element => {
           <div className="row">
             <div className="col-sm-7">
               <h1 className="heading-one animated fadeIn delay-2s">Expression Media<br/>Digital Agency</h1>
-              <p className="paragraph-two">Passion. Innovation. Creativity.</p>
+              <p className="paragraph-two animated fadeIn delay-1s">Passion. Innovation. Creativity.</p>
               <div>
                 <Link href="/contact">
                   <a className="btn-get-started hvr-shadow-radial animated fadeInUp delay-3s">

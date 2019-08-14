@@ -7,7 +7,7 @@ const Services: NextFunctionComponent<{}> = (): JSX.Element => {
   return (
     <>
       <Head>
-        <title>EXM | Services</title>
+        <title>Expression Media | Services</title>
       </Head>
 
       <header className="header">
@@ -15,7 +15,6 @@ const Services: NextFunctionComponent<{}> = (): JSX.Element => {
           <div className="row contact">
             <div className="col-sm-7">
               <h1 className="heading-one animated fadeIn delay-2s" >Our services</h1>
-              <p className="paragraph-two"> </p>
             </div>
             <div className="col-sm-5 animated fadeIn delay-2s">
               <div className="text-center">
@@ -34,16 +33,16 @@ const Services: NextFunctionComponent<{}> = (): JSX.Element => {
   <section id="services" className="services">
     <div className="container">
       <div className="row">
-        <div className="col-sm-4 text-center">
-        <h2 className="heading-header">Branding</h2><br></br>
+        <div className="col-sm-4 text-center mt-5">
+        <h2 className="heading-five pb-4">Branding</h2><br></br>
           <img src="/static/img/svg/brand.svg" className="img-fluid" alt="branding-img"/>
         </div>
-        <div className="col-sm-4 text-center">
-        <h2 className="heading-header">Digital Marketing</h2>
+        <div className="col-sm-4 text-center mt-5">
+        <h2 className="heading-five pb-4">Digital Marketing</h2>
           <img src="/static/img/svg/marketing1.svg" className="img-fluid" alt="branding-img"/>
         </div>
-        <div className="col-sm-4 text-center">
-        <h2 className="heading-header">Web Design</h2><br></br>
+        <div className="col-sm-4 text-center mt-5">
+        <h2 className="heading-five pb-4">Software Development</h2><br></br>
           <img src="/static/img/svg/softdev.svg" className="img-fluid" alt="branding-img"/>
         </div>
       </div>
