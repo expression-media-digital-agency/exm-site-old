@@ -7,7 +7,7 @@ const Portfolio: NextFunctionComponent<{}> = (): JSX.Element => {
   return (
     <>
       <Head>
-        <title>EXM | Portfolio</title>
+        <title>Expression Media | Portfolio</title>
       </Head>
 
       <header className="header">
@@ -54,17 +54,17 @@ const Portfolio: NextFunctionComponent<{}> = (): JSX.Element => {
     </div>
     <div className="card">
       <a href="">
-      <img className="card-img" src="/static/img/jpg/wall 1.jpg" alt="Card image"/>
+      <img className="card-img" src="/static/img/jpg/sticker.jpg" alt="Card image"/>
       </a>
     </div>
     <div className="card">
       <a href="">
-      <img className="card-img" src="/static/img/png/projects1.png" alt="Card image"/>
+      <img className="card-img" src="/static/img/jpg/Corporate-Brand-Identity-Mockup1.jpg" alt="Card image"/>
       </a>
     </div>
     <div className="card">
       <a href="">
-      <img className="card-img" src="/static/img/png/projects2.png" alt="Card image"/>
+      <img className="card-img" src="/static/img/jpg/Rubber Stamp.jpg" alt="Card image"/>
       </a>
     </div>
   </div>

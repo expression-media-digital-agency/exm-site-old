@@ -6119,6 +6119,23 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+/* 
+Screen Widths
+0-600px : phone
+600-900px:   Tablet Potrait
+900-1200px:   Tablet Landscape
+[1200px-1800px] is where normal styles applies
+1800px + :   Big Desktop
+@content helps to perse block of code into mixin
+$breakpoint arguement choices:
+- phone
+- tab-port //portrait tab
+- tab-land //landscape tab
+- big-desktop
+we use ems for media queries 1em = 16px
+000px/ 16 = em
+em adjsut based on the root px set by user in the browser
+*/
 @font-face {
   font-family: "ArticulatCF";
   src: url("/static/fonts/ArticulatCF-Medium.otf"); }
@@ -6137,19 +6154,48 @@ a:hover {
   font-size: 80px;
   font-weight: bold;
   color: #424242; }
+  @media (max-width: 75em) {
+    .heading-one {
+      font-size: 60px; } }
+  @media (max-width: 56.25em) {
+    .heading-one {
+      font-size: 50px; } }
 
 .heading-two {
   font-size: 50px;
   font-weight: bold;
   color: #FFFFFF; }
+  @media (max-width: 75em) {
+    .heading-two {
+      font-size: 40px; } }
+  @media (max-width: 56.25em) {
+    .heading-two {
+      font-size: 30px; } }
 
 .heading-three {
   font-size: 70px;
   font-weight: bold;
   color: #FFFFFF; }
+  @media (max-width: 75em) {
+    .heading-three {
+      font-size: 50px; } }
+  @media (max-width: 56.25em) {
+    .heading-three {
+      font-size: 40px; } }
 
 .heading-four {
   font-size: 50px;
+  font-weight: bold;
+  color: #FFFFFF; }
+  @media (max-width: 75em) {
+    .heading-four {
+      font-size: 40px; } }
+  @media (max-width: 56.25em) {
+    .heading-four {
+      font-size: 30px; } }
+
+.heading-five {
+  font-size: 30px;
   font-weight: bold;
   color: #FFFFFF; }
 
@@ -6274,19 +6320,40 @@ a:hover {
   padding-top: 100px; }
 
 .about {
-  background-color: #0F79D1;
-  padding: 140px; }
+  padding-top: 50px;
+  padding-bottom: 50px; }
 
 .mission {
-  background-color: #CE3737;
-  padding: 140px; }
+  padding-top: 50px;
+  padding-bottom: 50px; }
 
 .vision {
   background-color: #FDCA01;
   padding: 140px; }
 
+.our-info {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+.know-us {
+  margin-top: -150px; }
+  .know-us .each-section img {
+    width: 500px;
+    height: 500px; }
+
 .text {
-  padding: 140px; }
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px; }
+  @media (max-width: 75em) {
+    .text {
+      padding-top: 80px; } }
+  @media (max-width: 56.25em) {
+    .text {
+      padding-top: 50px; } }
+  @media (max-width: 37.5em) {
+    .text {
+      padding-top: 30px; } }
 
 .custom-shadow {
   border-radius: 10px;
@@ -6303,21 +6370,6 @@ a:hover {
 .contact .heading-one {
   margin-top: 20px;
   padding-top: 100px; }
-
-.about {
-  background-color: #0F79D1;
-  padding: 140px; }
-
-.mission {
-  background-color: #CE3737;
-  padding: 140px; }
-
-.vision {
-  background-color: #FDCA01;
-  padding: 140px; }
-
-.text {
-  padding: 140px; }
 
 .navbar {
   background-color: #FFFFFF;
@@ -6378,10 +6430,13 @@ a:hover {
   .footer .footer-heading {
     color: #FFFFFF;
     font-size: 20px;
-    font-weight: 600; }
+    font-weight: 600;
+    margin-top: 20px; }
   .footer .footer-text {
     font-size: 16px;
     color: #CCCCCC; }
+    .footer .footer-text:hover {
+      color: #FFFFFF; }
   .footer .icons {
     margin-top: 10px; }
     .footer .icons span {
@@ -6414,6 +6469,12 @@ a:hover {
     font-size: 50px;
     font-weight: bold;
     color: #424242; }
+    @media (max-width: 75em) {
+      .solution .heading {
+        font-size: 40px; } }
+    @media (max-width: 56.25em) {
+      .solution .heading {
+        font-size: 30px; } }
   .solution .paragraph-one {
     color: #424242;
     font-weight: 600;

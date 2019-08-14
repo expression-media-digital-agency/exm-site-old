@@ -11,22 +11,57 @@ a:hover{
     font-size: $heading-one-font-size;
     font-weight: bold;
     color: $color-black;
+    
+    @include respond(tab-land){
+		font-size: 60px;
+    }
+    
+    @include respond(tab-port){
+        font-size: 50px
+    }
 }
 
 .heading-two{
     font-size: $heading-two-font-size;
     font-weight: bold;
     color: $color-white;
+    @include respond(tab-land){
+		font-size: 40px;
+    }
+    
+    @include respond(tab-port){
+        font-size: 30px
+    }
 }
 
 .heading-three{
     font-size: $heading-three-font-size;
     font-weight: bold;
     color: $color-white;
+    @include respond(tab-land){
+		font-size: 50px;
+    }
+    
+    @include respond(tab-port){
+        font-size: 40px
+    }
 }
 
 .heading-four{
     font-size: $heading-four-font-size;
+    font-weight: bold;
+    color: $color-white;
+    @include respond(tab-land){
+		font-size: 40px;
+    }
+    
+    @include respond(tab-port){
+        font-size: 30px
+    }
+}
+
+.heading-five{
+    font-size: $heading-five-font-size;
     font-weight: bold;
     color: $color-white;
 }

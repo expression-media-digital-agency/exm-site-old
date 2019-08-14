@@ -8,6 +8,13 @@
         font-size: $create-solution-heading-font-size;
         font-weight: bold;
         color: $color-black;
+        @include respond(tab-land){
+            font-size: 40px
+        }
+        @include respond(tab-port){
+            font-size: 30px
+        }
+
     }
     .paragraph-one{
         color: $color-black;

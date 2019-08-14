@@ -9,11 +9,16 @@
     color: $color-white;
     font-size: $footer-heading-font-size;
     font-weight: 600;
+    margin-top: 20px
   }
 
   .footer-text{
     font-size: $footer-paragraph-font-size;
     color: $color-grey;
+
+    &:hover{
+      color: $color-white;
+    }
   }
   .icons{
     margin-top: 10px;

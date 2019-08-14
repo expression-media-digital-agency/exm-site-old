@@ -10,7 +10,7 @@ const Contact: NextFunctionComponent<{}> = (): JSX.Element => {
   return (
     <>
       <Head>
-        <title>EXM | Contact</title>
+        <title>Expression Media | Contact</title>
       </Head>
       <header className="header">
         <div className="container">
