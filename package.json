@@ -53,6 +53,7 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-transition-group": "^4.1.1",
+    "reactstrap": "^8.0.1",
     "typescript": "^3.3.3333"
   },
   "devDependencies": {

@@ -8,7 +8,7 @@ const About: NextFunctionComponent<{}> = (): JSX.Element => {
   return (
     <>
       <Head>
-        <title>EXM | About</title>
+        <title>Expression Media | About</title>
       </Head>
 
       <header className="header">
@@ -16,7 +16,7 @@ const About: NextFunctionComponent<{}> = (): JSX.Element => {
           <div className="row">
             <div className="col-sm-7">
               <h1 className="heading-one animated fadeIn delay-2s">About Us</h1>
-              <p className="paragraph-two">Get to know us</p>
+              <p className="paragraph-two animated fadeIn delay-1s">Get to know us</p>
               <div>
                 <Link href="/contact">
                   <a className="btn-get-started hvr-shadow-radial animated fadeInUp delay-3s">
@@ -48,7 +48,7 @@ const About: NextFunctionComponent<{}> = (): JSX.Element => {
                 <p className="paragraph-one">Digital Solutions respond to the diverse business needs with cutting-edge technologies that allow us to delve into the digital transformation of our customers, always focusing on the transformation of the business processes and specific needs.
                 <br/>
                 <br/>
-                ExM works to explore all the resources and digital trends that the market offers to develop your business through different IT solutions both cloud and on-premise: digitization of processes, web or mobile applications, collaborative environments and content management, among others.</p>
+                Expression Media works to explore all the resources and digital trends that the market offers to develop your business through different IT solutions both cloud and on-premise: digitization of processes, web or mobile applications, collaborative environments and content management, among others.</p>
               </div>
             </div>
           </div>
@@ -77,10 +77,10 @@ const About: NextFunctionComponent<{}> = (): JSX.Element => {
                 <img src="/static/img/svg/about3.svg" className="img-fluid" alt="web-dev-img"/>
               </div>
               <div className="col-sm-6 text-center">
-                <p className="paragraph-one">Are you looking for a dynamic team that can transform your business into a digital solution that will make your audience and customers patronise the services you render? Look no further, for ExM has got you covered.
+                <p className="paragraph-one">Are you looking for a dynamic team that can transform your business into a digital solution that will make your audience and customers patronise the services you render? Look no further, for Expression Media has got you covered.
                 <br/>
                 <br/>
-                At ExM, we utilise technologies to create, develop and integrate effective tools to serve your business. Our team puts its expertise at your disposal and offers a quality service to guide you, accompany you and to realize your business projects on all digital media.</p>
+                At Expression Media, we utilise technologies to create, develop and integrate effective tools to serve your business. Our team puts its expertise at your disposal and offers a quality service to guide you, accompany you and to realize your business projects on all digital media.</p>
               </div>
             </div>
           </div>

@@ -20,18 +20,47 @@
  }
 
 .about{
-    background-color: $color-blue;
-    padding: 140px;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .mission{
-    background-color: $color-red;
-    padding: 140px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .vision{
     background-color: $color-yellow;
     padding: 140px;
 }
 
+.our-info{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.know-us{
+    margin-top: -150px;
+    .each-section{
+
+        img{
+            width: 500px;
+            height: 500px;
+        }
+    }
+}
 .text{
-    padding: 140px;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    @include respond(tab-land){
+		padding-top: 80px;
+    }
+    
+    @include respond(tab-port){
+        padding-top: 50px
+    }
+
+    @include respond(phone){
+        padding-top: 30px
+    }
 }
