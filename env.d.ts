@@ -11,3 +11,5 @@ declare module 'next-page-transitions' {
         PageTransition
     }
 }
+
+declare module 'reactstrap'

@@ -1,11 +1,12 @@
 import React from 'react';
 import { Router } from 'routes';
 import Link from 'next/link';
-export interface INavBarProps {
+import NavBarMobile from 'components/NavBarMobile';
+interface INavBarState {
   
 }
 
-const NavBar: React.SFC<INavBarProps> = ({
+const NavBar: React.SFC<INavBarState> = ({
 
 }) => {
 
@@ -17,7 +18,7 @@ const NavBar: React.SFC<INavBarProps> = ({
                     <a className="navbar-brand animated fadeInLeft delay-1s"><img className="img-fluid-logo exm-logo" src="/static/img/svg/EXM Pry Logo.svg" alt="exm-logo"/></a>
                 </Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
+                    <span className="navbar-toggler-icon">menu</span>
                 </button>
 
                 <div className="collapse topnav navbar-collapse" id="navbarSupportedContent">
@@ -52,6 +53,9 @@ const NavBar: React.SFC<INavBarProps> = ({
                 </div>
             </div>
         </nav>
+        <div className="navbar-mobile">
+            <NavBarMobile/>
+        </div>
     </div>
   );
 };
