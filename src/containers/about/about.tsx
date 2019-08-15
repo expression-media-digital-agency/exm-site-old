@@ -25,7 +25,7 @@ const About: NextFunctionComponent<{}> = (): JSX.Element => {
                 </Link>
               </div>
             </div>
-            <div className="col-sm-5">
+            <div className="col-sm-5 header-img">
               <div className="text-center animated fadeIn delay-2s">
                 <img src="/static/img/svg/know.svg" className="img-fluid" alt="get to know us"/>
               </div>
