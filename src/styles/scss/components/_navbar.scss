@@ -13,26 +13,25 @@
         font-weight: 550;
         margin-right: 20px;
     }
+    .navbar-toggler{
+        span{
+            color: black
+        }
+    }
+    
+    @include respond(tab-port){
+        display: none;
+    }
+
+    @media screen and (max-width: 995px) {
+        display: none;
+    }
 
 }
 
-.topnav {
-    overflow: hidden;
-    
-    .mover {
-        float: right;
-        text-align: center;
+.navbar-mobile{
+    visibility: hidden;
+    @media screen and (max-width: 995px) {
+        visibility: visible;
     }
 }
-
-@media screen and (max-width: 990px) {
-    .navbar {
-        position: absolute !important;
-        top: 0px;
-    } 
-}
-
-
-
-
-
