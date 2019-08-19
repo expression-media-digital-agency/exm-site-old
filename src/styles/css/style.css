@@ -6650,3 +6650,19 @@ a:hover {
       border-top: none;
       border-radius: 10px;
       border-bottom: 1px solid #CCCCCC; }
+
+.mobile-logo {
+  visibility: hidden; }
+  .mobile-logo img {
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    background: transparent; }
+    @media (max-width: 37.5em) {
+      .mobile-logo img {
+        width: 90px;
+        height: 90px;
+        margin-top: -50px; } }
+  @media screen and (max-width: 995px) {
+    .mobile-logo {
+      visibility: visible; } }

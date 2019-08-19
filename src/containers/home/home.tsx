@@ -2,6 +2,7 @@ import React from 'react';
 import { NextFunctionComponent } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
+import MobileLogo from 'components/mobile-logo/mobile-logo';
 
 
 const Home: NextFunctionComponent<{}> = (): JSX.Element => {
@@ -13,6 +14,7 @@ const Home: NextFunctionComponent<{}> = (): JSX.Element => {
 
       <header className="header">
         <div className="container">
+          <MobileLogo/>
           <div className="row">
             <div className="col-sm-7">
               <h1 className="heading-one animated fadeIn delay-2s">Expression Media<br/>Digital Agency</h1>

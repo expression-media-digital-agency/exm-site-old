@@ -2,6 +2,7 @@ import React from 'react';
 import { NextFunctionComponent } from 'next';
 import Head from 'next/head';
 import CreateSolution from '../../components/create-solution/CreateSolution';
+import MobileLogo from 'components/mobile-logo/mobile-logo';
 
 const Portfolio: NextFunctionComponent<{}> = (): JSX.Element => {
   return (
@@ -12,6 +13,7 @@ const Portfolio: NextFunctionComponent<{}> = (): JSX.Element => {
 
       <header className="header">
         <div className="container">
+          <MobileLogo/>
           <div className="row contact">
             <div className="col-sm-7">
               <h1 className="heading-one animated fadeIn delay-0.5s" >Our Works</h1>
