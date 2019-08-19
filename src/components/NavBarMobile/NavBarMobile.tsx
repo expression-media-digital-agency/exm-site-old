@@ -25,6 +25,12 @@ const NavBarMobile: React.SFC<INavBarMobileState> = ({
 
             <nav className="navigation__nav">
                 <ul className="navigation__list">
+                <li className="navigation__item">
+                        <Link href="/" >
+                        <a className="navigation__link">Home</a>
+
+                        </Link>
+                    </li>
                     <li className="navigation__item">
                         <Link href="/story" >
                         <a className="navigation__link">Our Story</a>

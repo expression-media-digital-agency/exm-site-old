@@ -3,6 +3,7 @@ import { NextFunctionComponent } from 'next';
 import Link from 'next/link';
 import Head from 'next/head';
 import CreateSolution from '../../components/create-solution/CreateSolution';
+import MobileLogo from 'components/mobile-logo/mobile-logo';
 
 const About: NextFunctionComponent<{}> = (): JSX.Element => {
   return (
@@ -13,6 +14,7 @@ const About: NextFunctionComponent<{}> = (): JSX.Element => {
 
       <header className="header">
         <div className="container">
+          <MobileLogo/>
           <div className="row">
             <div className="col-sm-7">
               <h1 className="heading-one animated fadeIn delay-2s">About Us</h1>
