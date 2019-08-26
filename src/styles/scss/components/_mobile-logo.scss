@@ -1,0 +1,19 @@
+.mobile-logo{
+    img{
+        width: 100px;
+        height: 100px;
+        margin-top: -50px;
+        background: transparent;
+        @include respond(phone){
+            width: 90px;
+            height: 90px;
+            margin-top: -50px;
+
+        }
+    }
+    visibility: hidden;
+    @media screen and (max-width: 995px) {
+        visibility: visible;
+    }
+
+}

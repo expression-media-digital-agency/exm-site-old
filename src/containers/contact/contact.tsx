@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import CreateSolution from '../../components/create-solution/CreateSolution';
 import ContactForm from 'components/contact-form';
+import MobileLogo from 'components/mobile-logo/mobile-logo';
 
 
 const Contact: NextFunctionComponent<{}> = (): JSX.Element => {
@@ -14,6 +15,7 @@ const Contact: NextFunctionComponent<{}> = (): JSX.Element => {
       </Head>
       <header className="header">
         <div className="container">
+        <MobileLogo/>
           <div className="row">
             <div className="col-sm-12">
               <h1 className="contact-heading  animated fadeIn delay-1s">
