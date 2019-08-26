@@ -67,7 +67,7 @@ const Footer: React.SFC<IFooterProps> = ({}) => {
                     </div>
                     <div className="row">
                         <div className="col-sm-12 text-center copyright">
-                            <p className="footer-text "> &copy; expression media digital agency 2019 </p>
+                            <p className="footer-text "> &copy; Expression Media Digital Agency 2019 </p>
                         </div>
                     </div>
                 </div>
