@@ -30,7 +30,7 @@
     "@zeit/next-typescript": "^1.1.1",
     "animate.css": "^3.7.2",
     "aos": "^3.0.0-beta.6",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "bootstrap": "^4.3.1",
     "bootstrap-scss": "^4.3.1",
     "compression": "^1.7.4",
